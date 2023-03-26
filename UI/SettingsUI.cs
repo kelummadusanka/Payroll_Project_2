@@ -1,5 +1,4 @@
-﻿using Payroll_Project;
-using Payroll_Project_2.Backend;
+﻿using Payroll_Project_2.Backend;
 using System.Windows.Forms;
 
 namespace Payroll_Project_2.UI

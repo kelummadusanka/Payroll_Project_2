@@ -1,7 +1,6 @@
-﻿using Payroll_Project_2.Backend;
-using System;
+﻿using System;
 
-namespace Payroll_Project
+namespace Payroll_Project_2.Backend
 {
     internal class Salary
     {
@@ -31,32 +30,32 @@ namespace Payroll_Project
             Employee employee = new EmployeeDataAccess().GetEmployee(id);
             Setting setting = new SettingDataAccess().GetValue();
 
-            this.Id = id;
-            this.Name = employee.Name;
-            this.Salary_Paid_Date = Salary_Paid_Day.Date;
-            this.Begin_Date = setting.Begin_Date;
-            this.End_Date = setting.End_Date;
-            this.salary_Cycle_Date_Range = setting.Date_Range;
-            this.Monthly_Salary = employee.Monthly_Salary;
-            this.Allowance = employee.Allowance;
-            this.Over_Time_Rate = employee.Over_Time_Rate;
-            this.government_Tax_Rate = setting.Tax_Rate;
+            Id = id;
+            Name = employee.Name;
+            Salary_Paid_Date = Salary_Paid_Day.Date;
+            Begin_Date = setting.Begin_Date;
+            End_Date = setting.End_Date;
+            salary_Cycle_Date_Range = setting.Date_Range;
+            Monthly_Salary = employee.Monthly_Salary;
+            Allowance = employee.Allowance;
+            Over_Time_Rate = employee.Over_Time_Rate;
+            government_Tax_Rate = setting.Tax_Rate;
             this.no_of_overtime_Hours = no_of_overtime_Hours;
             this.no_of_Absent_Days = no_of_Absent_Days;
             this.no_of_Holidays = no_of_Holidays;
-            this.No_Pay_Value = CalculateNoPayValue(Monthly_Salary, salary_Cycle_Date_Range, no_of_Absent_Days);
-            this.Base_Pay_Value = CalculateBasePayValue(no_of_overtime_Hours);
-            this.Gross_Pay_Value = CalculateGrossPayValue();
+            No_Pay_Value = CalculateNoPayValue(Monthly_Salary, salary_Cycle_Date_Range, no_of_Absent_Days);
+            Base_Pay_Value = CalculateBasePayValue(no_of_overtime_Hours);
+            Gross_Pay_Value = CalculateGrossPayValue();
         }
 
         private decimal CalculateNoPayValue(decimal totalSalary, int salaryCycleDateRange, decimal noOfAbsentDays)
         {
-            return Math.Round((totalSalary / salaryCycleDateRange) * noOfAbsentDays, 2);
+            return Math.Round(totalSalary / salaryCycleDateRange * noOfAbsentDays, 2);
         }
 
         private decimal CalculateBasePayValue(decimal noOfOvertimeHours)
         {
-            return Math.Round(Monthly_Salary + Allowance + (Over_Time_Rate * noOfOvertimeHours));
+            return Math.Round(Monthly_Salary + Allowance + Over_Time_Rate * noOfOvertimeHours);
         }
 
         private decimal CalculateGrossPayValue()

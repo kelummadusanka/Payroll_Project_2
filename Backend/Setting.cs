@@ -1,4 +1,4 @@
-﻿namespace Payroll_Project
+﻿namespace Payroll_Project_2.Backend
 {
     internal class Setting
     {

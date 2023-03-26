@@ -1,5 +1,4 @@
-﻿using Payroll_Project;
-using Payroll_Project_2.Backend;
+﻿using Payroll_Project_2.Backend;
 using System.Collections.Generic;
 using System.Windows.Forms;
 

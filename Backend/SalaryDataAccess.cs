@@ -1,5 +1,4 @@
-﻿using Payroll_Project;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Windows.Forms;
