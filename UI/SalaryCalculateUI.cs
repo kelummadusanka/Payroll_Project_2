@@ -87,5 +87,6 @@ namespace Payroll_Project_2.UI
         {
             PaySheetPanel.Visible= false;
         }
+
     }
 }

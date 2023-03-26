@@ -158,14 +158,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\For Web\png\Color logo - no background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\resized-images\" />
     <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\For Web\png\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Button Images\calculator.png" />

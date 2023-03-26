@@ -43,6 +43,7 @@ namespace Payroll_Project_2.UI
             this.EmployeeIdComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.SalaryCycleTxtBox = new System.Windows.Forms.TextBox();
+            this.CalculateBtn = new System.Windows.Forms.Button();
             this.EmployeeIDLabel = new System.Windows.Forms.Label();
             this.EndDateLabel = new System.Windows.Forms.Label();
             this.BeginDateLabel = new System.Windows.Forms.Label();
@@ -63,11 +64,10 @@ namespace Payroll_Project_2.UI
             this.EmployeeNameValueLabel = new System.Windows.Forms.Label();
             this.Setting = new System.Windows.Forms.Label();
             this.PaySheetPanel = new System.Windows.Forms.Panel();
-            this.SalaryFullPanel = new System.Windows.Forms.Panel();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.Closebtn = new System.Windows.Forms.Button();
+            this.SalaryFullPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.CalculateBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.PaySheetPanel.SuspendLayout();
             this.SalaryFullPanel.SuspendLayout();
@@ -76,21 +76,23 @@ namespace Payroll_Project_2.UI
             // 
             // BeginDatePicker
             // 
-            this.BeginDatePicker.CustomFormat = "ddMMMMyyyy";
+            this.BeginDatePicker.CustomFormat = "ddMMMM";
+            this.BeginDatePicker.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.BeginDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.BeginDatePicker.Location = new System.Drawing.Point(220, 87);
+            this.BeginDatePicker.Location = new System.Drawing.Point(220, 82);
             this.BeginDatePicker.Name = "BeginDatePicker";
-            this.BeginDatePicker.Size = new System.Drawing.Size(120, 20);
+            this.BeginDatePicker.Size = new System.Drawing.Size(120, 27);
             this.BeginDatePicker.TabIndex = 0;
             this.BeginDatePicker.ValueChanged += new System.EventHandler(this.FromDatePicker_ValueChanged);
             // 
             // EndDatePicker
             // 
-            this.EndDatePicker.CustomFormat = "ddMMMMyyyy";
+            this.EndDatePicker.CustomFormat = "ddMMMM";
+            this.EndDatePicker.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.EndDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.EndDatePicker.Location = new System.Drawing.Point(220, 149);
+            this.EndDatePicker.Location = new System.Drawing.Point(220, 144);
             this.EndDatePicker.Name = "EndDatePicker";
-            this.EndDatePicker.Size = new System.Drawing.Size(120, 20);
+            this.EndDatePicker.Size = new System.Drawing.Size(120, 27);
             this.EndDatePicker.TabIndex = 1;
             this.EndDatePicker.ValueChanged += new System.EventHandler(this.ToDatePicker_ValueChanged);
             // 
@@ -106,18 +108,20 @@ namespace Payroll_Project_2.UI
             // 
             // AbsentTxtBox
             // 
-            this.AbsentTxtBox.Location = new System.Drawing.Point(220, 273);
+            this.AbsentTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.AbsentTxtBox.Location = new System.Drawing.Point(220, 268);
             this.AbsentTxtBox.Name = "AbsentTxtBox";
-            this.AbsentTxtBox.Size = new System.Drawing.Size(120, 20);
+            this.AbsentTxtBox.Size = new System.Drawing.Size(120, 27);
             this.AbsentTxtBox.TabIndex = 3;
             this.AbsentTxtBox.Text = "0";
             this.AbsentTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // HoldayTxtBox
             // 
-            this.HoldayTxtBox.Location = new System.Drawing.Point(220, 335);
+            this.HoldayTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.HoldayTxtBox.Location = new System.Drawing.Point(220, 330);
             this.HoldayTxtBox.Name = "HoldayTxtBox";
-            this.HoldayTxtBox.Size = new System.Drawing.Size(120, 20);
+            this.HoldayTxtBox.Size = new System.Drawing.Size(120, 27);
             this.HoldayTxtBox.TabIndex = 5;
             this.HoldayTxtBox.Text = "0";
             this.HoldayTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -134,9 +138,10 @@ namespace Payroll_Project_2.UI
             // 
             // OTTxtBox
             // 
-            this.OTTxtBox.Location = new System.Drawing.Point(220, 397);
+            this.OTTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.OTTxtBox.Location = new System.Drawing.Point(220, 392);
             this.OTTxtBox.Name = "OTTxtBox";
-            this.OTTxtBox.Size = new System.Drawing.Size(120, 20);
+            this.OTTxtBox.Size = new System.Drawing.Size(120, 27);
             this.OTTxtBox.TabIndex = 7;
             this.OTTxtBox.Text = "0";
             this.OTTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -195,12 +200,28 @@ namespace Payroll_Project_2.UI
             // 
             // SalaryCycleTxtBox
             // 
-            this.SalaryCycleTxtBox.Location = new System.Drawing.Point(220, 211);
+            this.SalaryCycleTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.SalaryCycleTxtBox.Location = new System.Drawing.Point(220, 206);
             this.SalaryCycleTxtBox.Name = "SalaryCycleTxtBox";
             this.SalaryCycleTxtBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.SalaryCycleTxtBox.Size = new System.Drawing.Size(120, 20);
+            this.SalaryCycleTxtBox.Size = new System.Drawing.Size(120, 27);
             this.SalaryCycleTxtBox.TabIndex = 14;
             this.SalaryCycleTxtBox.Text = "0";
+            // 
+            // CalculateBtn
+            // 
+            this.CalculateBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.CalculateBtn.Image = ((System.Drawing.Image)(resources.GetObject("CalculateBtn.Image")));
+            this.CalculateBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CalculateBtn.Location = new System.Drawing.Point(26, 466);
+            this.CalculateBtn.Name = "CalculateBtn";
+            this.CalculateBtn.Padding = new System.Windows.Forms.Padding(94, 0, 94, 0);
+            this.CalculateBtn.Size = new System.Drawing.Size(314, 36);
+            this.CalculateBtn.TabIndex = 12;
+            this.CalculateBtn.Text = "Calculate";
+            this.CalculateBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CalculateBtn.UseVisualStyleBackColor = true;
+            this.CalculateBtn.Click += new System.EventHandler(this.SalaryCalculateBtn_Click);
             // 
             // EmployeeIDLabel
             // 
@@ -424,16 +445,6 @@ namespace Payroll_Project_2.UI
             this.PaySheetPanel.TabIndex = 16;
             this.PaySheetPanel.Visible = false;
             // 
-            // SalaryFullPanel
-            // 
-            this.SalaryFullPanel.Controls.Add(this.PaySheetPanel);
-            this.SalaryFullPanel.Controls.Add(this.pictureBox1);
-            this.SalaryFullPanel.Controls.Add(this.panel1);
-            this.SalaryFullPanel.Location = new System.Drawing.Point(0, 0);
-            this.SalaryFullPanel.Name = "SalaryFullPanel";
-            this.SalaryFullPanel.Size = new System.Drawing.Size(930, 761);
-            this.SalaryFullPanel.TabIndex = 20;
-            // 
             // SaveBtn
             // 
             this.SaveBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
@@ -452,7 +463,7 @@ namespace Payroll_Project_2.UI
             // Closebtn
             // 
             this.Closebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Closebtn.BackgroundImage = global::Payroll_Project_2.Properties.Resources.close;
+            this.Closebtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Closebtn.BackgroundImage")));
             this.Closebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Closebtn.FlatAppearance.BorderSize = 0;
             this.Closebtn.Location = new System.Drawing.Point(331, 3);
@@ -462,30 +473,25 @@ namespace Payroll_Project_2.UI
             this.Closebtn.UseVisualStyleBackColor = true;
             this.Closebtn.Click += new System.EventHandler(this.Closebtn_Click);
             // 
+            // SalaryFullPanel
+            // 
+            this.SalaryFullPanel.Controls.Add(this.PaySheetPanel);
+            this.SalaryFullPanel.Controls.Add(this.pictureBox1);
+            this.SalaryFullPanel.Controls.Add(this.panel1);
+            this.SalaryFullPanel.Location = new System.Drawing.Point(0, 0);
+            this.SalaryFullPanel.Name = "SalaryFullPanel";
+            this.SalaryFullPanel.Size = new System.Drawing.Size(930, 761);
+            this.SalaryFullPanel.TabIndex = 20;
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Payroll_Project_2.Properties.Resources.logo;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(728, 592);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(215, 166);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
-            // 
-            // CalculateBtn
-            // 
-            this.CalculateBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.CalculateBtn.Image = ((System.Drawing.Image)(resources.GetObject("CalculateBtn.Image")));
-            this.CalculateBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CalculateBtn.Location = new System.Drawing.Point(26, 466);
-            this.CalculateBtn.Name = "CalculateBtn";
-            this.CalculateBtn.Padding = new System.Windows.Forms.Padding(94, 0, 94, 0);
-            this.CalculateBtn.Size = new System.Drawing.Size(314, 36);
-            this.CalculateBtn.TabIndex = 12;
-            this.CalculateBtn.Text = "Calculate";
-            this.CalculateBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CalculateBtn.UseVisualStyleBackColor = true;
-            this.CalculateBtn.Click += new System.EventHandler(this.SalaryCalculateBtn_Click);
             // 
             // SalaryCalculateUI
             // 
