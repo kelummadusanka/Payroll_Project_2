@@ -16,13 +16,13 @@ namespace Payroll_Project_2.UI
             try
             {
 
-            int Date_Range = int.Parse(DateRangeTxtBox.Text);
-            int Begin_Date = int.Parse(SalaryBeginDateTxtBox.Text);
-            int End_Date = int.Parse(SalaryEndDateTxtBox.Text);
-            int No_of_Leaves = int.Parse(LeavesTxtBox.Text);
-            decimal Tax_Rate = decimal.Parse(GovTaxRateTxtBox.Text);
+                int Date_Range = int.Parse(DateRangeTxtBox.Text);
+                int Begin_Date = int.Parse(SalaryBeginDateTxtBox.Text);
+                int End_Date = int.Parse(SalaryEndDateTxtBox.Text);
+                int No_of_Leaves = int.Parse(LeavesTxtBox.Text);
+                decimal Tax_Rate = decimal.Parse(GovTaxRateTxtBox.Text);
 
-            new SettingDataAccess().SetValues(Date_Range, Begin_Date, End_Date, No_of_Leaves, Tax_Rate);
+                new SettingDataAccess().SetValues(Date_Range, Begin_Date, End_Date, No_of_Leaves, Tax_Rate);
             }
             catch
             {

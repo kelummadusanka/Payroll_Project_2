@@ -19,7 +19,7 @@ namespace Payroll_Project_2.UI
 
         private void SearchBtn_Click(object sender, System.EventArgs e)
         {
-            DetailPannel.Visible= true;
+            DetailPannel.Visible = true;
             int id = int.Parse(EmployeeIdComboBox.Text);
 
             List<Salary> salaryList = new SalaryDataAccess().GetSalaryList(id);
@@ -30,10 +30,10 @@ namespace Payroll_Project_2.UI
             AllowanceValueLabel.Text = employee.Allowance.ToString();
 
             SalaryDetailTable.Visible = true;
-            
-            if(salaryList.Count == 0)
+
+            if (salaryList.Count == 0)
             {
-                SalaryDetailTable.Visible= false;
+                SalaryDetailTable.Visible = false;
             }
 
 

@@ -1,6 +1,5 @@
 ﻿using Payroll_Project_2.Backend;
 using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Payroll_Project_2.UI
@@ -33,22 +32,22 @@ namespace Payroll_Project_2.UI
             {
                 try
                 {
-                Employee employee = new Employee()
-                {
-                    Name = Name,
-                    Monthly_Salary= Monthly_Salary,
-                    Allowance = Allowance,
-                    Over_Time_Rate = Over_Time_Rate
-                };
-                new EmployeeDataAccess().AddEmployee(employee);
-                EmployeesDataGrid.DataSource = new EmployeeDataAccess().GetAllEmployees();
-                MessageBox.Show("Successfully Created!");
+                    Employee employee = new Employee()
+                    {
+                        Name = Name,
+                        Monthly_Salary = Monthly_Salary,
+                        Allowance = Allowance,
+                        Over_Time_Rate = Over_Time_Rate
+                    };
+                    new EmployeeDataAccess().AddEmployee(employee);
+                    EmployeesDataGrid.DataSource = new EmployeeDataAccess().GetAllEmployees();
+                    MessageBox.Show("Successfully Created!");
 
                 }
-                catch (Exception) 
+                catch (Exception)
                 {
                     MessageBox.Show("Error While Creating an Employee!");
-                } 
+                }
 
             }
         }

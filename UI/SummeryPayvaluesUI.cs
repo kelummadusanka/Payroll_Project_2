@@ -1,15 +1,13 @@
-﻿using Payroll_Project;
-using Payroll_Project_2.Backend;
+﻿using Payroll_Project_2.Backend;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Payroll_Project_2.UI
 {
     public partial class SummeryPayvaluesUI : UserControl
     {
-        
+
         List<decimal> payValues = new List<decimal>();
         readonly SalaryDataAccess salaryDataAccess = new SalaryDataAccess();
 

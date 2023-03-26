@@ -161,51 +161,6 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Button Images\calculator.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\cash-payment.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\clear.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\create.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\delete.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\employee.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\home.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\money.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\refresh.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\report.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\salary.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\search.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\settings.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\six_month_salary.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\Button Images\update.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Database\Database.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -234,8 +189,6 @@
     <None Include="Images\employee.png" />
     <None Include="Images\delete_Red.png" />
     <None Include="Images\delete.png" />
-    <None Include="Images\create.png" />
-    <None Include="Images\create %28Custom%29.png" />
     <None Include="Images\close.png" />
     <None Include="Images\clear.png" />
     <None Include="Images\cash-payment.png" />

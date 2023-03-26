@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace Payroll_Project_2.Backend
+﻿namespace Payroll_Project_2.Backend
 {
     public static class DbSettings
     {

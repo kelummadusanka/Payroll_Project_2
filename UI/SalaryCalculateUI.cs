@@ -39,7 +39,7 @@ namespace Payroll_Project_2.UI
             }
 
             salary = new Salary(Id, Salary_Paid_Date, no_of_Over_time_Hours, no_of_Absent_Days, no_of_Holidays);
-            
+
             EmployeeNameValueLabel.Text = salary.Name.ToString().TrimEnd().ToUpperInvariant();
             MonthlySalaryValueLabel.Text = salary.Monthly_Salary.ToString();
             AllowanceValueLabel.Text = salary.Allowance.ToString();
@@ -85,7 +85,7 @@ namespace Payroll_Project_2.UI
 
         private void Closebtn_Click(object sender, EventArgs e)
         {
-            PaySheetPanel.Visible= false;
+            PaySheetPanel.Visible = false;
         }
 
     }
