@@ -162,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\resized-images\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\For Web\png\logo.png" />
@@ -219,8 +220,33 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\ebit.png" />
-    <None Include="Resources\empty-box.png" />
+    <None Include="Images\no-credit-card.png" />
+    <None Include="Images\empty-box.png" />
+    <None Include="Images\ebit.png" />
+    <None Include="Images\earning.png" />
+    <None Include="Images\create .png" />
+    <None Include="Images\update.png" />
+    <None Include="Images\six_month_salary.png" />
+    <None Include="Images\settings.png" />
+    <None Include="Images\search.png" />
+    <None Include="Images\salary.png" />
+    <None Include="Images\report.png" />
+    <None Include="Images\refresh.png" />
+    <None Include="Images\money.png" />
+    <None Include="Images\LogOut .png" />
+    <None Include="Images\logo.png" />
+    <None Include="Images\home.png" />
+    <None Include="Images\growth.png" />
+    <None Include="Images\eraser.png" />
+    <None Include="Images\employee.png" />
+    <None Include="Images\delete_Red.png" />
+    <None Include="Images\delete.png" />
+    <None Include="Images\create.png" />
+    <None Include="Images\create %28Custom%29.png" />
+    <None Include="Images\close.png" />
+    <None Include="Images\clear.png" />
+    <None Include="Images\cash-payment.png" />
+    <None Include="Images\calculator.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

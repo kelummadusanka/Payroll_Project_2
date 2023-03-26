@@ -30,10 +30,9 @@ namespace Payroll_Project_2.UI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeUI));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.EmlCreateBtn = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeUI));
             this.EmployeesDataGrid = new System.Windows.Forms.DataGridView();
             this.NameLabel = new System.Windows.Forms.Label();
             this.NameTxtBox = new System.Windows.Forms.TextBox();
@@ -45,34 +44,17 @@ namespace Payroll_Project_2.UI
             this.OTRatesLabel = new System.Windows.Forms.Label();
             this.Setting = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.EmpDeleteBtn = new System.Windows.Forms.Button();
-            this.EmpUpdateBtn = new System.Windows.Forms.Button();
             this.SearchBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SearchBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.EmlCreateBtn = new System.Windows.Forms.Button();
+            this.EmpDeleteBtn = new System.Windows.Forms.Button();
+            this.EmpUpdateBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeesDataGrid)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // EmlCreateBtn
-            // 
-            this.EmlCreateBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.EmlCreateBtn.Image = ((System.Drawing.Image)(resources.GetObject("EmlCreateBtn.Image")));
-            this.EmlCreateBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EmlCreateBtn.Location = new System.Drawing.Point(373, 249);
-            this.EmlCreateBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.EmlCreateBtn.Name = "EmlCreateBtn";
-            this.EmlCreateBtn.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.EmlCreateBtn.Size = new System.Drawing.Size(158, 41);
-            this.EmlCreateBtn.TabIndex = 0;
-            this.EmlCreateBtn.Text = "    Create";
-            this.EmlCreateBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.EmlCreateBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.EmlCreateBtn.UseVisualStyleBackColor = true;
-            this.EmlCreateBtn.Click += new System.EventHandler(this.EmlCreateBtn_Click);
             // 
             // EmployeesDataGrid
             // 
@@ -219,10 +201,75 @@ namespace Payroll_Project_2.UI
             this.groupBox1.Text = "Employee Detail";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // SearchBox
+            // 
+            this.SearchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SearchBox.Location = new System.Drawing.Point(199, 101);
+            this.SearchBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchBox.Name = "SearchBox";
+            this.SearchBox.Size = new System.Drawing.Size(370, 27);
+            this.SearchBox.TabIndex = 27;
+            this.SearchBox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(55, 101);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 20);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Search by ID";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // SearchBtn
+            // 
+            this.SearchBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SearchBtn.BackgroundImage")));
+            this.SearchBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SearchBtn.FlatAppearance.BorderSize = 0;
+            this.SearchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SearchBtn.Location = new System.Drawing.Point(595, 102);
+            this.SearchBtn.Name = "SearchBtn";
+            this.SearchBtn.Padding = new System.Windows.Forms.Padding(5);
+            this.SearchBtn.Size = new System.Drawing.Size(25, 25);
+            this.SearchBtn.TabIndex = 30;
+            this.SearchBtn.UseVisualStyleBackColor = true;
+            this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Payroll_Project_2.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(728, 592);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(215, 166);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            // 
+            // EmlCreateBtn
+            // 
+            this.EmlCreateBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.EmlCreateBtn.Image = global::Payroll_Project_2.Properties.Resources.create_;
+            this.EmlCreateBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EmlCreateBtn.Location = new System.Drawing.Point(373, 249);
+            this.EmlCreateBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.EmlCreateBtn.Name = "EmlCreateBtn";
+            this.EmlCreateBtn.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.EmlCreateBtn.Size = new System.Drawing.Size(158, 41);
+            this.EmlCreateBtn.TabIndex = 0;
+            this.EmlCreateBtn.Text = "    Create";
+            this.EmlCreateBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.EmlCreateBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.EmlCreateBtn.UseVisualStyleBackColor = true;
+            this.EmlCreateBtn.Click += new System.EventHandler(this.EmlCreateBtn_Click);
+            // 
             // EmpDeleteBtn
             // 
             this.EmpDeleteBtn.ForeColor = System.Drawing.Color.Red;
-            this.EmpDeleteBtn.Image = ((System.Drawing.Image)(resources.GetObject("EmpDeleteBtn.Image")));
+            this.EmpDeleteBtn.Image = global::Payroll_Project_2.Properties.Resources.delete_Red;
             this.EmpDeleteBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EmpDeleteBtn.Location = new System.Drawing.Point(25, 249);
             this.EmpDeleteBtn.Margin = new System.Windows.Forms.Padding(4);
@@ -250,53 +297,6 @@ namespace Payroll_Project_2.UI
             this.EmpUpdateBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.EmpUpdateBtn.UseVisualStyleBackColor = true;
             this.EmpUpdateBtn.Click += new System.EventHandler(this.EmpUpdateBtn_Click);
-            // 
-            // SearchBox
-            // 
-            this.SearchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.SearchBox.Location = new System.Drawing.Point(199, 101);
-            this.SearchBox.Margin = new System.Windows.Forms.Padding(4);
-            this.SearchBox.Name = "SearchBox";
-            this.SearchBox.Size = new System.Drawing.Size(370, 27);
-            this.SearchBox.TabIndex = 27;
-            this.SearchBox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(55, 101);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 20);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Search by ID";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(728, 592);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 166);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 29;
-            this.pictureBox1.TabStop = false;
-            // 
-            // SearchBtn
-            // 
-            this.SearchBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SearchBtn.BackgroundImage")));
-            this.SearchBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.SearchBtn.FlatAppearance.BorderSize = 0;
-            this.SearchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SearchBtn.Location = new System.Drawing.Point(595, 102);
-            this.SearchBtn.Name = "SearchBtn";
-            this.SearchBtn.Padding = new System.Windows.Forms.Padding(5);
-            this.SearchBtn.Size = new System.Drawing.Size(25, 25);
-            this.SearchBtn.TabIndex = 30;
-            this.SearchBtn.UseVisualStyleBackColor = true;
-            this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 
             // EmployeeUI
             // 

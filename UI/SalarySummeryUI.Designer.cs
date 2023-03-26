@@ -130,7 +130,7 @@ namespace Payroll_Project_2.UI
             this.SalaryDetailTable.Controls.Add(this.label1, 0, 0);
             this.SalaryDetailTable.Controls.Add(this.Month1, 0, 1);
             this.SalaryDetailTable.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.SalaryDetailTable.Location = new System.Drawing.Point(7, 8);
+            this.SalaryDetailTable.Location = new System.Drawing.Point(3, 3);
             this.SalaryDetailTable.Name = "SalaryDetailTable";
             this.SalaryDetailTable.RowCount = 6;
             this.SalaryDetailTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
@@ -450,7 +450,7 @@ namespace Payroll_Project_2.UI
             // ClearBtn
             // 
             this.ClearBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.ClearBtn.Image = ((System.Drawing.Image)(resources.GetObject("ClearBtn.Image")));
+            this.ClearBtn.Image = global::Payroll_Project_2.Properties.Resources.eraser;
             this.ClearBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ClearBtn.Location = new System.Drawing.Point(686, 602);
             this.ClearBtn.Name = "ClearBtn";
@@ -611,6 +611,7 @@ namespace Payroll_Project_2.UI
             // 
             // pictureBox2
             // 
+            this.pictureBox2.ErrorImage = global::Payroll_Project_2.Properties.Resources.empty_box;
             this.pictureBox2.Image = global::Payroll_Project_2.Properties.Resources.empty_box;
             this.pictureBox2.Location = new System.Drawing.Point(263, 38);
             this.pictureBox2.Name = "pictureBox2";
@@ -644,6 +645,7 @@ namespace Payroll_Project_2.UI
             // 
             // pictureBox1
             // 
+            this.pictureBox1.ErrorImage = global::Payroll_Project_2.Properties.Resources.logo;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(728, 592);
             this.pictureBox1.Name = "pictureBox1";

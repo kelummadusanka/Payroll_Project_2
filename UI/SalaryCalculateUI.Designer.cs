@@ -43,7 +43,6 @@ namespace Payroll_Project_2.UI
             this.EmployeeIdComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.SalaryCycleTxtBox = new System.Windows.Forms.TextBox();
-            this.CalculateBtn = new System.Windows.Forms.Button();
             this.EmployeeIDLabel = new System.Windows.Forms.Label();
             this.EndDateLabel = new System.Windows.Forms.Label();
             this.BeginDateLabel = new System.Windows.Forms.Label();
@@ -62,12 +61,13 @@ namespace Payroll_Project_2.UI
             this.label28 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.EmployeeNameValueLabel = new System.Windows.Forms.Label();
-            this.Closebtn = new System.Windows.Forms.Button();
             this.Setting = new System.Windows.Forms.Label();
             this.PaySheetPanel = new System.Windows.Forms.Panel();
-            this.SaveBtn = new System.Windows.Forms.Button();
             this.SalaryFullPanel = new System.Windows.Forms.Panel();
+            this.SaveBtn = new System.Windows.Forms.Button();
+            this.Closebtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.CalculateBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.PaySheetPanel.SuspendLayout();
             this.SalaryFullPanel.SuspendLayout();
@@ -201,21 +201,6 @@ namespace Payroll_Project_2.UI
             this.SalaryCycleTxtBox.Size = new System.Drawing.Size(120, 20);
             this.SalaryCycleTxtBox.TabIndex = 14;
             this.SalaryCycleTxtBox.Text = "0";
-            // 
-            // CalculateBtn
-            // 
-            this.CalculateBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.CalculateBtn.Image = ((System.Drawing.Image)(resources.GetObject("CalculateBtn.Image")));
-            this.CalculateBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CalculateBtn.Location = new System.Drawing.Point(26, 466);
-            this.CalculateBtn.Name = "CalculateBtn";
-            this.CalculateBtn.Padding = new System.Windows.Forms.Padding(94, 0, 94, 0);
-            this.CalculateBtn.Size = new System.Drawing.Size(314, 36);
-            this.CalculateBtn.TabIndex = 12;
-            this.CalculateBtn.Text = "Calculate";
-            this.CalculateBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CalculateBtn.UseVisualStyleBackColor = true;
-            this.CalculateBtn.Click += new System.EventHandler(this.SalaryCalculateBtn_Click);
             // 
             // EmployeeIDLabel
             // 
@@ -402,19 +387,6 @@ namespace Payroll_Project_2.UI
             this.EmployeeNameValueLabel.Text = "0";
             this.EmployeeNameValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Closebtn
-            // 
-            this.Closebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Closebtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Closebtn.BackgroundImage")));
-            this.Closebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Closebtn.FlatAppearance.BorderSize = 0;
-            this.Closebtn.Location = new System.Drawing.Point(331, 3);
-            this.Closebtn.Name = "Closebtn";
-            this.Closebtn.Size = new System.Drawing.Size(23, 23);
-            this.Closebtn.TabIndex = 22;
-            this.Closebtn.UseVisualStyleBackColor = true;
-            this.Closebtn.Click += new System.EventHandler(this.Closebtn_Click);
-            // 
             // Setting
             // 
             this.Setting.AutoSize = true;
@@ -452,10 +424,20 @@ namespace Payroll_Project_2.UI
             this.PaySheetPanel.TabIndex = 16;
             this.PaySheetPanel.Visible = false;
             // 
+            // SalaryFullPanel
+            // 
+            this.SalaryFullPanel.Controls.Add(this.PaySheetPanel);
+            this.SalaryFullPanel.Controls.Add(this.pictureBox1);
+            this.SalaryFullPanel.Controls.Add(this.panel1);
+            this.SalaryFullPanel.Location = new System.Drawing.Point(0, 0);
+            this.SalaryFullPanel.Name = "SalaryFullPanel";
+            this.SalaryFullPanel.Size = new System.Drawing.Size(930, 761);
+            this.SalaryFullPanel.TabIndex = 20;
+            // 
             // SaveBtn
             // 
             this.SaveBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.SaveBtn.Image = ((System.Drawing.Image)(resources.GetObject("SaveBtn.Image")));
+            this.SaveBtn.Image = global::Payroll_Project_2.Properties.Resources.create_;
             this.SaveBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SaveBtn.Location = new System.Drawing.Point(19, 477);
             this.SaveBtn.Name = "SaveBtn";
@@ -467,25 +449,43 @@ namespace Payroll_Project_2.UI
             this.SaveBtn.UseVisualStyleBackColor = true;
             this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
-            // SalaryFullPanel
+            // Closebtn
             // 
-            this.SalaryFullPanel.Controls.Add(this.PaySheetPanel);
-            this.SalaryFullPanel.Controls.Add(this.pictureBox1);
-            this.SalaryFullPanel.Controls.Add(this.panel1);
-            this.SalaryFullPanel.Location = new System.Drawing.Point(0, 0);
-            this.SalaryFullPanel.Name = "SalaryFullPanel";
-            this.SalaryFullPanel.Size = new System.Drawing.Size(930, 761);
-            this.SalaryFullPanel.TabIndex = 20;
+            this.Closebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Closebtn.BackgroundImage = global::Payroll_Project_2.Properties.Resources.close;
+            this.Closebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Closebtn.FlatAppearance.BorderSize = 0;
+            this.Closebtn.Location = new System.Drawing.Point(331, 3);
+            this.Closebtn.Name = "Closebtn";
+            this.Closebtn.Size = new System.Drawing.Size(23, 23);
+            this.Closebtn.TabIndex = 22;
+            this.Closebtn.UseVisualStyleBackColor = true;
+            this.Closebtn.Click += new System.EventHandler(this.Closebtn_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::Payroll_Project_2.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(728, 592);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(215, 166);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
+            // 
+            // CalculateBtn
+            // 
+            this.CalculateBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.CalculateBtn.Image = ((System.Drawing.Image)(resources.GetObject("CalculateBtn.Image")));
+            this.CalculateBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CalculateBtn.Location = new System.Drawing.Point(26, 466);
+            this.CalculateBtn.Name = "CalculateBtn";
+            this.CalculateBtn.Padding = new System.Windows.Forms.Padding(94, 0, 94, 0);
+            this.CalculateBtn.Size = new System.Drawing.Size(314, 36);
+            this.CalculateBtn.TabIndex = 12;
+            this.CalculateBtn.Text = "Calculate";
+            this.CalculateBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CalculateBtn.UseVisualStyleBackColor = true;
+            this.CalculateBtn.Click += new System.EventHandler(this.SalaryCalculateBtn_Click);
             // 
             // SalaryCalculateUI
             // 

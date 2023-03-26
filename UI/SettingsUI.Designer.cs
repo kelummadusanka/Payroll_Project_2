@@ -31,7 +31,6 @@ namespace Payroll_Project_2.UI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsUI));
             this.Setting = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,9 +45,9 @@ namespace Payroll_Project_2.UI
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ClearBtn = new System.Windows.Forms.Button();
             this.UpdateBtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -189,11 +188,21 @@ namespace Payroll_Project_2.UI
             this.label6.TabIndex = 11;
             this.label6.Text = "%";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Payroll_Project_2.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(728, 592);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(215, 166);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
+            // 
             // ClearBtn
             // 
             this.ClearBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClearBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.ClearBtn.Image = ((System.Drawing.Image)(resources.GetObject("ClearBtn.Image")));
+            this.ClearBtn.Image = global::Payroll_Project_2.Properties.Resources.eraser;
             this.ClearBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ClearBtn.Location = new System.Drawing.Point(75, 417);
             this.ClearBtn.Name = "ClearBtn";
@@ -209,7 +218,7 @@ namespace Payroll_Project_2.UI
             // 
             this.UpdateBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.UpdateBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.UpdateBtn.Image = ((System.Drawing.Image)(resources.GetObject("UpdateBtn.Image")));
+            this.UpdateBtn.Image = global::Payroll_Project_2.Properties.Resources.eraser;
             this.UpdateBtn.Location = new System.Drawing.Point(264, 417);
             this.UpdateBtn.Name = "UpdateBtn";
             this.UpdateBtn.Padding = new System.Windows.Forms.Padding(9, 0, 9, 0);
@@ -220,16 +229,6 @@ namespace Payroll_Project_2.UI
             this.UpdateBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.UpdateBtn.UseVisualStyleBackColor = true;
             this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(728, 592);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 166);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
             // 
             // SettingsUI
             // 

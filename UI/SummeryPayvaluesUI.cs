@@ -11,7 +11,7 @@ namespace Payroll_Project_2.UI
     {
         
         List<decimal> payValues = new List<decimal>();
-        SalaryDataAccess salaryDataAccess = new SalaryDataAccess();
+        readonly SalaryDataAccess salaryDataAccess = new SalaryDataAccess();
 
         public SummeryPayvaluesUI()
         {
