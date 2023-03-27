@@ -31,31 +31,31 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Grifindo));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.SettingBtn = new System.Windows.Forms.Button();
             this.salaryDropDownPannel = new System.Windows.Forms.Panel();
             this.SubsalaryBar = new System.Windows.Forms.Panel();
+            this.SalaryOverallBtn = new System.Windows.Forms.Button();
+            this.SalarySummeryBtn = new System.Windows.Forms.Button();
+            this.SalaryCulateBtn = new System.Windows.Forms.Button();
             this.Buttonbar = new System.Windows.Forms.Panel();
+            this.SalaryBtn = new System.Windows.Forms.Button();
+            this.EmployeeBtn = new System.Windows.Forms.Button();
+            this.buttonHome = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.LogOutBtn = new System.Windows.Forms.Button();
             this.ContentPannel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.SettingBtn = new System.Windows.Forms.Button();
-            this.SalaryOverallBtn = new System.Windows.Forms.Button();
-            this.SalarySummeryBtn = new System.Windows.Forms.Button();
-            this.SalaryCulateBtn = new System.Windows.Forms.Button();
-            this.SalaryBtn = new System.Windows.Forms.Button();
-            this.EmployeeBtn = new System.Windows.Forms.Button();
-            this.buttonHome = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.LogOutBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.salaryDropDownPannel.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,6 +84,27 @@
             this.panel6.Size = new System.Drawing.Size(238, 411);
             this.panel6.TabIndex = 5;
             // 
+            // SettingBtn
+            // 
+            this.SettingBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SettingBtn.FlatAppearance.BorderSize = 0;
+            this.SettingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SettingBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.SettingBtn.ForeColor = System.Drawing.Color.Black;
+            this.SettingBtn.Image = ((System.Drawing.Image)(resources.GetObject("SettingBtn.Image")));
+            this.SettingBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SettingBtn.Location = new System.Drawing.Point(0, 321);
+            this.SettingBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.SettingBtn.Name = "SettingBtn";
+            this.SettingBtn.Padding = new System.Windows.Forms.Padding(30, 0, 60, 0);
+            this.SettingBtn.Size = new System.Drawing.Size(238, 50);
+            this.SettingBtn.TabIndex = 8;
+            this.SettingBtn.Tag = "";
+            this.SettingBtn.Text = "    Setting";
+            this.SettingBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.SettingBtn.UseVisualStyleBackColor = true;
+            this.SettingBtn.Click += new System.EventHandler(this.SettingBtn_Click);
+            // 
             // salaryDropDownPannel
             // 
             this.salaryDropDownPannel.Controls.Add(this.SubsalaryBar);
@@ -107,108 +128,6 @@
             this.SubsalaryBar.Name = "SubsalaryBar";
             this.SubsalaryBar.Size = new System.Drawing.Size(6, 26);
             this.SubsalaryBar.TabIndex = 3;
-            // 
-            // Buttonbar
-            // 
-            this.Buttonbar.BackColor = System.Drawing.Color.Orange;
-            this.Buttonbar.Location = new System.Drawing.Point(0, 20);
-            this.Buttonbar.Margin = new System.Windows.Forms.Padding(0);
-            this.Buttonbar.Name = "Buttonbar";
-            this.Buttonbar.Size = new System.Drawing.Size(8, 36);
-            this.Buttonbar.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.Controls.Add(this.pictureBox1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(238, 139);
-            this.panel5.TabIndex = 4;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.LogOutBtn);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 693);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(238, 68);
-            this.panel4.TabIndex = 3;
-            // 
-            // ContentPannel
-            // 
-            this.ContentPannel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentPannel.Location = new System.Drawing.Point(238, 0);
-            this.ContentPannel.Name = "ContentPannel";
-            this.ContentPannel.Size = new System.Drawing.Size(946, 761);
-            this.ContentPannel.TabIndex = 31;
-            this.ContentPannel.TabStop = true;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 56);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 60, 0);
-            this.button1.Size = new System.Drawing.Size(238, 36);
-            this.button1.TabIndex = 3;
-            this.button1.Tag = "button";
-            this.button1.Text = "Employee";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 92);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 75, 0);
-            this.button2.Size = new System.Drawing.Size(238, 36);
-            this.button2.TabIndex = 4;
-            this.button2.Tag = "button";
-            this.button2.Text = "Salary";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(335, 302);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 60);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // SettingBtn
-            // 
-            this.SettingBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SettingBtn.FlatAppearance.BorderSize = 0;
-            this.SettingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SettingBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.SettingBtn.ForeColor = System.Drawing.Color.Black;
-            this.SettingBtn.Image = ((System.Drawing.Image)(resources.GetObject("SettingBtn.Image")));
-            this.SettingBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SettingBtn.Location = new System.Drawing.Point(0, 321);
-            this.SettingBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.SettingBtn.Name = "SettingBtn";
-            this.SettingBtn.Padding = new System.Windows.Forms.Padding(30, 0, 60, 0);
-            this.SettingBtn.Size = new System.Drawing.Size(238, 50);
-            this.SettingBtn.TabIndex = 8;
-            this.SettingBtn.Tag = "";
-            this.SettingBtn.Text = "    Setting";
-            this.SettingBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.SettingBtn.UseVisualStyleBackColor = true;
-            this.SettingBtn.Click += new System.EventHandler(this.SettingBtn_Click);
             // 
             // SalaryOverallBtn
             // 
@@ -273,6 +192,15 @@
             this.SalaryCulateBtn.UseVisualStyleBackColor = true;
             this.SalaryCulateBtn.Click += new System.EventHandler(this.SalaryCulateBtn_Click);
             // 
+            // Buttonbar
+            // 
+            this.Buttonbar.BackColor = System.Drawing.Color.Orange;
+            this.Buttonbar.Location = new System.Drawing.Point(0, 20);
+            this.Buttonbar.Margin = new System.Windows.Forms.Padding(0);
+            this.Buttonbar.Name = "Buttonbar";
+            this.Buttonbar.Size = new System.Drawing.Size(8, 36);
+            this.Buttonbar.TabIndex = 2;
+            // 
             // SalaryBtn
             // 
             this.SalaryBtn.Dock = System.Windows.Forms.DockStyle.Top;
@@ -335,6 +263,16 @@
             this.buttonHome.UseVisualStyleBackColor = true;
             this.buttonHome.Click += new System.EventHandler(this.ButtonHome_Click);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.Controls.Add(this.pictureBox1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(238, 139);
+            this.panel5.TabIndex = 4;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -346,6 +284,16 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.LogOutBtn);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 693);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(238, 68);
+            this.panel4.TabIndex = 3;
             // 
             // LogOutBtn
             // 
@@ -367,6 +315,58 @@
             this.LogOutBtn.UseVisualStyleBackColor = true;
             this.LogOutBtn.Click += new System.EventHandler(this.LogOutBtn_Click_1);
             // 
+            // ContentPannel
+            // 
+            this.ContentPannel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ContentPannel.Location = new System.Drawing.Point(238, 0);
+            this.ContentPannel.Name = "ContentPannel";
+            this.ContentPannel.Size = new System.Drawing.Size(946, 761);
+            this.ContentPannel.TabIndex = 31;
+            this.ContentPannel.TabStop = true;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 56);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 60, 0);
+            this.button1.Size = new System.Drawing.Size(238, 36);
+            this.button1.TabIndex = 3;
+            this.button1.Tag = "button";
+            this.button1.Text = "Employee";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 92);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 75, 0);
+            this.button2.Size = new System.Drawing.Size(238, 36);
+            this.button2.TabIndex = 4;
+            this.button2.Tag = "button";
+            this.button2.Text = "Salary";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(335, 302);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(78, 60);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
             // Grifindo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,16 +376,20 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1200, 800);
+            this.MinimumSize = new System.Drawing.Size(1200, 800);
             this.Name = "Grifindo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grifindo";
             this.Load += new System.EventHandler(this.Grifindo_Load);
             this.panel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.salaryDropDownPannel.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
