@@ -157,9 +157,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Database\Database.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -168,6 +166,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\sammy-arrow.gif" />
+    <None Include="Resources\sammy-searching.gif" />
     <None Include="Images\no-credit-card.png" />
     <None Include="Images\empty-box.png" />
     <None Include="Images\ebit.png" />

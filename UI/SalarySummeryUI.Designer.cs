@@ -64,7 +64,6 @@ namespace Payroll_Project_2.UI
             this.label1 = new System.Windows.Forms.Label();
             this.Month1 = new System.Windows.Forms.Label();
             this.OverallSalaryReportLabel = new System.Windows.Forms.Label();
-            this.ClearBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -80,15 +79,20 @@ namespace Payroll_Project_2.UI
             this.TablePannel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.RedArrow = new System.Windows.Forms.PictureBox();
             this.SearchBtn = new System.Windows.Forms.Button();
+            this.ClearBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.InvaliedSearchImage = new System.Windows.Forms.PictureBox();
             this.SalaryDetailTable.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.DetailPannel.SuspendLayout();
             this.TablePannel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RedArrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvaliedSearchImage)).BeginInit();
             this.SuspendLayout();
             // 
             // SalaryDetailTable
@@ -447,21 +451,6 @@ namespace Payroll_Project_2.UI
             this.OverallSalaryReportLabel.TabIndex = 1;
             this.OverallSalaryReportLabel.Text = "Recent Salary Report";
             // 
-            // ClearBtn
-            // 
-            this.ClearBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.ClearBtn.Image = global::Payroll_Project_2.Properties.Resources.eraser;
-            this.ClearBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ClearBtn.Location = new System.Drawing.Point(686, 602);
-            this.ClearBtn.Name = "ClearBtn";
-            this.ClearBtn.Padding = new System.Windows.Forms.Padding(9, 0, 9, 0);
-            this.ClearBtn.Size = new System.Drawing.Size(116, 36);
-            this.ClearBtn.TabIndex = 49;
-            this.ClearBtn.Text = "Clear";
-            this.ClearBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ClearBtn.UseVisualStyleBackColor = true;
-            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 5;
@@ -594,7 +583,7 @@ namespace Payroll_Project_2.UI
             this.DetailPannel.Controls.Add(this.EmployeeNameValueLabel);
             this.DetailPannel.Controls.Add(this.label20);
             this.DetailPannel.Controls.Add(this.label18);
-            this.DetailPannel.Location = new System.Drawing.Point(30, 149);
+            this.DetailPannel.Location = new System.Drawing.Point(30, 153);
             this.DetailPannel.Name = "DetailPannel";
             this.DetailPannel.Size = new System.Drawing.Size(843, 529);
             this.DetailPannel.TabIndex = 58;
@@ -630,6 +619,16 @@ namespace Payroll_Project_2.UI
             this.panel2.Size = new System.Drawing.Size(420, 59);
             this.panel2.TabIndex = 60;
             // 
+            // RedArrow
+            // 
+            this.RedArrow.Image = global::Payroll_Project_2.Properties.Resources.sammy_arrow;
+            this.RedArrow.Location = new System.Drawing.Point(268, 142);
+            this.RedArrow.Name = "RedArrow";
+            this.RedArrow.Size = new System.Drawing.Size(120, 258);
+            this.RedArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.RedArrow.TabIndex = 61;
+            this.RedArrow.TabStop = false;
+            // 
             // SearchBtn
             // 
             this.SearchBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SearchBtn.BackgroundImage")));
@@ -643,6 +642,22 @@ namespace Payroll_Project_2.UI
             this.SearchBtn.UseVisualStyleBackColor = true;
             this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 
+            // ClearBtn
+            // 
+            this.ClearBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.ClearBtn.Image = global::Payroll_Project_2.Properties.Resources.eraser;
+            this.ClearBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ClearBtn.Location = new System.Drawing.Point(686, 602);
+            this.ClearBtn.Name = "ClearBtn";
+            this.ClearBtn.Padding = new System.Windows.Forms.Padding(9, 0, 9, 0);
+            this.ClearBtn.Size = new System.Drawing.Size(116, 36);
+            this.ClearBtn.TabIndex = 49;
+            this.ClearBtn.Text = "Clear";
+            this.ClearBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ClearBtn.UseVisualStyleBackColor = true;
+            this.ClearBtn.Visible = false;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.ErrorImage = global::Payroll_Project_2.Properties.Resources.logo;
@@ -653,6 +668,17 @@ namespace Payroll_Project_2.UI
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 59;
             this.pictureBox1.TabStop = false;
+            // 
+            // InvaliedSearchImage
+            // 
+            this.InvaliedSearchImage.Image = global::Payroll_Project_2.Properties.Resources.sammy_searching;
+            this.InvaliedSearchImage.Location = new System.Drawing.Point(248, 207);
+            this.InvaliedSearchImage.Name = "InvaliedSearchImage";
+            this.InvaliedSearchImage.Size = new System.Drawing.Size(366, 290);
+            this.InvaliedSearchImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.InvaliedSearchImage.TabIndex = 59;
+            this.InvaliedSearchImage.TabStop = false;
+            this.InvaliedSearchImage.Visible = false;
             // 
             // SalarySummeryUI
             // 
@@ -665,6 +691,8 @@ namespace Payroll_Project_2.UI
             this.Controls.Add(this.DetailPannel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.OverallSalaryReportLabel);
+            this.Controls.Add(this.InvaliedSearchImage);
+            this.Controls.Add(this.RedArrow);
             this.DoubleBuffered = true;
             this.Name = "SalarySummeryUI";
             this.Size = new System.Drawing.Size(946, 761);
@@ -679,7 +707,9 @@ namespace Payroll_Project_2.UI
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RedArrow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvaliedSearchImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -737,5 +767,7 @@ namespace Payroll_Project_2.UI
         private Panel panel2;
         private Panel TablePannel;
         private PictureBox pictureBox2;
+        private PictureBox InvaliedSearchImage;
+        private PictureBox RedArrow;
     }
 }

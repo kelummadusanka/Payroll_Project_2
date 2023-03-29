@@ -302,7 +302,7 @@ namespace Payroll_Project_2.UI
             this.Controls.Add(this.OverallSalaryReportLabel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.ForeColor = System.Drawing.Color.Transparent;
+            this.ForeColor = System.Drawing.Color.IndianRed;
             this.Name = "SummeryPayvaluesUI";
             this.Size = new System.Drawing.Size(946, 761);
             this.Load += new System.EventHandler(this.SummeryPayvaluesUI_Load);

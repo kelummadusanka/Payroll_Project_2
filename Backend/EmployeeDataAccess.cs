@@ -151,10 +151,9 @@ namespace Payroll_Project_2.Backend
                     }
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                Console.Write(e.ToString());
-                throw;
+                throw ex;
             }
 
             return null;
