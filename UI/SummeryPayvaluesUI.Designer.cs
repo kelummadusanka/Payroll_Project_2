@@ -51,16 +51,23 @@ namespace Payroll_Project_2.UI
             this.OverallSalaryReportLabel = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BarchartPannel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.NopayBar = new System.Windows.Forms.Button();
+            this.BasepayBar = new System.Windows.Forms.Button();
+            this.GroospayBar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.BarchartPannel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -71,6 +78,7 @@ namespace Payroll_Project_2.UI
             this.panel1.Controls.Add(this.GrossPayValueLabel);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(36, 214);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(431, 218);
@@ -88,7 +96,7 @@ namespace Payroll_Project_2.UI
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Payroll_Project_2.Properties.Resources.earning;
+            this.pictureBox3.Image = global::Payroll_Project_2.Properties.Resources.ebit;
             this.pictureBox3.Location = new System.Drawing.Point(15, 91);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 40);
@@ -98,7 +106,7 @@ namespace Payroll_Project_2.UI
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Payroll_Project_2.Properties.Resources.ebit;
+            this.pictureBox2.Image = global::Payroll_Project_2.Properties.Resources.earning;
             this.pictureBox2.Location = new System.Drawing.Point(15, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
@@ -114,7 +122,7 @@ namespace Payroll_Project_2.UI
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(94, 172);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 28);
@@ -130,7 +138,7 @@ namespace Payroll_Project_2.UI
             this.BasePayValueLabel.AutoSize = true;
             this.BasePayValueLabel.BackColor = System.Drawing.Color.Transparent;
             this.BasePayValueLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.BasePayValueLabel.ForeColor = System.Drawing.Color.Black;
+            this.BasePayValueLabel.ForeColor = System.Drawing.Color.White;
             this.BasePayValueLabel.Location = new System.Drawing.Point(314, 94);
             this.BasePayValueLabel.Name = "BasePayValueLabel";
             this.BasePayValueLabel.Size = new System.Drawing.Size(23, 28);
@@ -146,7 +154,7 @@ namespace Payroll_Project_2.UI
             this.NoPayValueLabel.AutoSize = true;
             this.NoPayValueLabel.BackColor = System.Drawing.Color.Transparent;
             this.NoPayValueLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.NoPayValueLabel.ForeColor = System.Drawing.Color.Black;
+            this.NoPayValueLabel.ForeColor = System.Drawing.Color.White;
             this.NoPayValueLabel.Location = new System.Drawing.Point(314, 172);
             this.NoPayValueLabel.Name = "NoPayValueLabel";
             this.NoPayValueLabel.Size = new System.Drawing.Size(23, 28);
@@ -162,7 +170,7 @@ namespace Payroll_Project_2.UI
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(94, 94);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 28);
@@ -178,7 +186,7 @@ namespace Payroll_Project_2.UI
             this.GrossPayValueLabel.AutoSize = true;
             this.GrossPayValueLabel.BackColor = System.Drawing.Color.Transparent;
             this.GrossPayValueLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.GrossPayValueLabel.ForeColor = System.Drawing.Color.Black;
+            this.GrossPayValueLabel.ForeColor = System.Drawing.Color.White;
             this.GrossPayValueLabel.Location = new System.Drawing.Point(314, 16);
             this.GrossPayValueLabel.Name = "GrossPayValueLabel";
             this.GrossPayValueLabel.Size = new System.Drawing.Size(91, 28);
@@ -194,7 +202,7 @@ namespace Payroll_Project_2.UI
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(94, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 28);
@@ -248,6 +256,7 @@ namespace Payroll_Project_2.UI
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.RefreshBtn);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.BeginDateLabel);
@@ -264,7 +273,7 @@ namespace Payroll_Project_2.UI
             this.RefreshBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.RefreshBtn.FlatAppearance.BorderSize = 0;
             this.RefreshBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RefreshBtn.Location = new System.Drawing.Point(353, 27);
+            this.RefreshBtn.Location = new System.Drawing.Point(353, 36);
             this.RefreshBtn.Name = "RefreshBtn";
             this.RefreshBtn.Size = new System.Drawing.Size(30, 30);
             this.RefreshBtn.TabIndex = 31;
@@ -276,35 +285,102 @@ namespace Payroll_Project_2.UI
             this.OverallSalaryReportLabel.AutoSize = true;
             this.OverallSalaryReportLabel.BackColor = System.Drawing.Color.Transparent;
             this.OverallSalaryReportLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.OverallSalaryReportLabel.ForeColor = System.Drawing.Color.Black;
-            this.OverallSalaryReportLabel.Location = new System.Drawing.Point(30, 26);
+            this.OverallSalaryReportLabel.ForeColor = System.Drawing.Color.White;
+            this.OverallSalaryReportLabel.Location = new System.Drawing.Point(31, 26);
             this.OverallSalaryReportLabel.Name = "OverallSalaryReportLabel";
-            this.OverallSalaryReportLabel.Size = new System.Drawing.Size(339, 45);
+            this.OverallSalaryReportLabel.Size = new System.Drawing.Size(260, 45);
             this.OverallSalaryReportLabel.TabIndex = 33;
-            this.OverallSalaryReportLabel.Text = "Overall Salary Report";
+            this.OverallSalaryReportLabel.Text = "Total Pay Values";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Payroll_Project_2.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(728, 595);
+            this.pictureBox1.Image = global::Payroll_Project_2.Properties.Resources.logo1;
+            this.pictureBox1.Location = new System.Drawing.Point(1004, 504);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 166);
+            this.pictureBox1.Size = new System.Drawing.Size(161, 127);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabIndex = 61;
             this.pictureBox1.TabStop = false;
+            // 
+            // BarchartPannel
+            // 
+            this.BarchartPannel.BackColor = System.Drawing.Color.Transparent;
+            this.BarchartPannel.Controls.Add(this.button1);
+            this.BarchartPannel.Controls.Add(this.NopayBar);
+            this.BarchartPannel.Controls.Add(this.BasepayBar);
+            this.BarchartPannel.Controls.Add(this.GroospayBar);
+            this.BarchartPannel.Location = new System.Drawing.Point(616, 214);
+            this.BarchartPannel.Name = "BarchartPannel";
+            this.BarchartPannel.Size = new System.Drawing.Size(462, 227);
+            this.BarchartPannel.TabIndex = 62;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gold;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button1.FlatAppearance.BorderSize = 3;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(5, 227);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // NopayBar
+            // 
+            this.NopayBar.FlatAppearance.BorderColor = System.Drawing.Color.DeepPink;
+            this.NopayBar.FlatAppearance.BorderSize = 2;
+            this.NopayBar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.NopayBar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.NopayBar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NopayBar.Location = new System.Drawing.Point(3, 167);
+            this.NopayBar.Name = "NopayBar";
+            this.NopayBar.Size = new System.Drawing.Size(371, 47);
+            this.NopayBar.TabIndex = 2;
+            this.NopayBar.UseVisualStyleBackColor = true;
+            // 
+            // BasepayBar
+            // 
+            this.BasepayBar.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
+            this.BasepayBar.FlatAppearance.BorderSize = 2;
+            this.BasepayBar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BasepayBar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BasepayBar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BasepayBar.Location = new System.Drawing.Point(3, 87);
+            this.BasepayBar.Name = "BasepayBar";
+            this.BasepayBar.Size = new System.Drawing.Size(371, 47);
+            this.BasepayBar.TabIndex = 1;
+            this.BasepayBar.UseVisualStyleBackColor = true;
+            // 
+            // GroospayBar
+            // 
+            this.GroospayBar.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
+            this.GroospayBar.FlatAppearance.BorderSize = 2;
+            this.GroospayBar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.GroospayBar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.GroospayBar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GroospayBar.Location = new System.Drawing.Point(3, 9);
+            this.GroospayBar.Name = "GroospayBar";
+            this.GroospayBar.Size = new System.Drawing.Size(371, 47);
+            this.GroospayBar.TabIndex = 0;
+            this.GroospayBar.UseVisualStyleBackColor = true;
             // 
             // SummeryPayvaluesUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.BarchartPannel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.OverallSalaryReportLabel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.IndianRed;
             this.Name = "SummeryPayvaluesUI";
-            this.Size = new System.Drawing.Size(946, 761);
+            this.Size = new System.Drawing.Size(1184, 650);
             this.Load += new System.EventHandler(this.SummeryPayvaluesUI_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -314,6 +390,7 @@ namespace Payroll_Project_2.UI
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.BarchartPannel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,12 +410,17 @@ namespace Payroll_Project_2.UI
         private Panel panel2;
         private Label OverallSalaryReportLabel;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Label label4;
         private Label GrossPayValueLabel;
         private Label label2;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
+        private PictureBox pictureBox1;
+        private Panel BarchartPannel;
+        private Button GroospayBar;
+        private Button NopayBar;
+        private Button BasepayBar;
+        private Button button1;
     }
 }

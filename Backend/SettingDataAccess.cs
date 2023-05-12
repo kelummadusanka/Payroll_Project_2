@@ -8,7 +8,7 @@ namespace Payroll_Project_2.Backend
     {
         private readonly string connectionString = DbSettings.ConnectionString;
 
-        public void SetValues(int date_Range, int begin_Date, int end_Date, int no_of_Leaves, decimal Tax_Rate)
+        public void SetSettingValues(int date_Range, int begin_Date, int end_Date, int no_of_Leaves, decimal Tax_Rate)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -50,7 +50,7 @@ namespace Payroll_Project_2.Backend
             }
         }
 
-        public Setting GetValue()
+        public Setting GetSettingValue()
         {
             string query = "SELECT * FROM Settings WHERE Id = 1";
 

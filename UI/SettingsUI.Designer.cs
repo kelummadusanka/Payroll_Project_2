@@ -31,6 +31,7 @@ namespace Payroll_Project_2.UI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsUI));
             this.Setting = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,8 +57,10 @@ namespace Payroll_Project_2.UI
             // Setting
             // 
             this.Setting.AutoSize = true;
+            this.Setting.BackColor = System.Drawing.Color.Transparent;
             this.Setting.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.Setting.Location = new System.Drawing.Point(30, 26);
+            this.Setting.ForeColor = System.Drawing.Color.White;
+            this.Setting.Location = new System.Drawing.Point(69, 14);
             this.Setting.Name = "Setting";
             this.Setting.Size = new System.Drawing.Size(141, 45);
             this.Setting.TabIndex = 0;
@@ -115,7 +118,10 @@ namespace Payroll_Project_2.UI
             // 
             // DateRangeTxtBox
             // 
+            this.DateRangeTxtBox.BackColor = System.Drawing.Color.DimGray;
+            this.DateRangeTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.DateRangeTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.DateRangeTxtBox.ForeColor = System.Drawing.Color.White;
             this.DateRangeTxtBox.Location = new System.Drawing.Point(3, 135);
             this.DateRangeTxtBox.Name = "DateRangeTxtBox";
             this.DateRangeTxtBox.Size = new System.Drawing.Size(86, 27);
@@ -123,7 +129,10 @@ namespace Payroll_Project_2.UI
             // 
             // GovTaxRateTxtBox
             // 
+            this.GovTaxRateTxtBox.BackColor = System.Drawing.Color.DimGray;
+            this.GovTaxRateTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.GovTaxRateTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.GovTaxRateTxtBox.ForeColor = System.Drawing.Color.White;
             this.GovTaxRateTxtBox.Location = new System.Drawing.Point(2, 259);
             this.GovTaxRateTxtBox.Name = "GovTaxRateTxtBox";
             this.GovTaxRateTxtBox.Size = new System.Drawing.Size(86, 27);
@@ -131,7 +140,10 @@ namespace Payroll_Project_2.UI
             // 
             // LeavesTxtBox
             // 
+            this.LeavesTxtBox.BackColor = System.Drawing.Color.DimGray;
+            this.LeavesTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LeavesTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.LeavesTxtBox.ForeColor = System.Drawing.Color.White;
             this.LeavesTxtBox.Location = new System.Drawing.Point(3, 197);
             this.LeavesTxtBox.Name = "LeavesTxtBox";
             this.LeavesTxtBox.Size = new System.Drawing.Size(86, 27);
@@ -139,7 +151,10 @@ namespace Payroll_Project_2.UI
             // 
             // SalaryEndDateTxtBox
             // 
+            this.SalaryEndDateTxtBox.BackColor = System.Drawing.Color.DimGray;
+            this.SalaryEndDateTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SalaryEndDateTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.SalaryEndDateTxtBox.ForeColor = System.Drawing.Color.White;
             this.SalaryEndDateTxtBox.Location = new System.Drawing.Point(3, 73);
             this.SalaryEndDateTxtBox.Name = "SalaryEndDateTxtBox";
             this.SalaryEndDateTxtBox.Size = new System.Drawing.Size(86, 27);
@@ -147,7 +162,10 @@ namespace Payroll_Project_2.UI
             // 
             // SalaryBeginDateTxtBox
             // 
+            this.SalaryBeginDateTxtBox.BackColor = System.Drawing.Color.DimGray;
+            this.SalaryBeginDateTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SalaryBeginDateTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.SalaryBeginDateTxtBox.ForeColor = System.Drawing.Color.White;
             this.SalaryBeginDateTxtBox.Location = new System.Drawing.Point(3, 11);
             this.SalaryBeginDateTxtBox.Name = "SalaryBeginDateTxtBox";
             this.SalaryBeginDateTxtBox.Size = new System.Drawing.Size(86, 27);
@@ -160,6 +178,7 @@ namespace Payroll_Project_2.UI
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label5);
+            this.panel3.ForeColor = System.Drawing.Color.White;
             this.panel3.Location = new System.Drawing.Point(64, 82);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(236, 286);
@@ -173,16 +192,17 @@ namespace Payroll_Project_2.UI
             this.panel4.Controls.Add(this.SalaryEndDateTxtBox);
             this.panel4.Controls.Add(this.DateRangeTxtBox);
             this.panel4.Controls.Add(this.SalaryBeginDateTxtBox);
-            this.panel4.Location = new System.Drawing.Point(306, 82);
+            this.panel4.Location = new System.Drawing.Point(342, 82);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(112, 286);
+            this.panel4.Size = new System.Drawing.Size(119, 286);
             this.panel4.TabIndex = 16;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(91, 258);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(91, 262);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(22, 20);
             this.label6.TabIndex = 11;
@@ -190,19 +210,21 @@ namespace Payroll_Project_2.UI
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Payroll_Project_2.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(728, 592);
+            this.pictureBox1.Image = global::Payroll_Project_2.Properties.Resources.logo1;
+            this.pictureBox1.Location = new System.Drawing.Point(1010, 510);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 166);
+            this.pictureBox1.Size = new System.Drawing.Size(161, 127);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabIndex = 60;
             this.pictureBox1.TabStop = false;
             // 
             // ClearBtn
             // 
+            this.ClearBtn.BackColor = System.Drawing.Color.Gold;
             this.ClearBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ClearBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.ClearBtn.Image = global::Payroll_Project_2.Properties.Resources.eraser;
+            this.ClearBtn.Image = ((System.Drawing.Image)(resources.GetObject("ClearBtn.Image")));
             this.ClearBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ClearBtn.Location = new System.Drawing.Point(75, 417);
             this.ClearBtn.Name = "ClearBtn";
@@ -211,15 +233,17 @@ namespace Payroll_Project_2.UI
             this.ClearBtn.TabIndex = 12;
             this.ClearBtn.Text = "       Clear";
             this.ClearBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ClearBtn.UseVisualStyleBackColor = true;
+            this.ClearBtn.UseVisualStyleBackColor = false;
             this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
             // UpdateBtn
             // 
+            this.UpdateBtn.BackColor = System.Drawing.Color.Gold;
             this.UpdateBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.UpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.UpdateBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.UpdateBtn.Image = global::Payroll_Project_2.Properties.Resources.eraser;
-            this.UpdateBtn.Location = new System.Drawing.Point(264, 417);
+            this.UpdateBtn.Image = global::Payroll_Project_2.Properties.Resources.refresh__1_;
+            this.UpdateBtn.Location = new System.Drawing.Point(299, 417);
             this.UpdateBtn.Name = "UpdateBtn";
             this.UpdateBtn.Padding = new System.Windows.Forms.Padding(9, 0, 9, 0);
             this.UpdateBtn.Size = new System.Drawing.Size(131, 37);
@@ -227,14 +251,15 @@ namespace Payroll_Project_2.UI
             this.UpdateBtn.Text = "    Update";
             this.UpdateBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.UpdateBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.UpdateBtn.UseVisualStyleBackColor = true;
+            this.UpdateBtn.UseVisualStyleBackColor = false;
             this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // SettingsUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.Color.Black;
+            this.CausesValidation = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -242,7 +267,7 @@ namespace Payroll_Project_2.UI
             this.Controls.Add(this.UpdateBtn);
             this.Controls.Add(this.Setting);
             this.Name = "SettingsUI";
-            this.Size = new System.Drawing.Size(946, 761);
+            this.Size = new System.Drawing.Size(1184, 650);
             this.Load += new System.EventHandler(this.SettingsUI_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

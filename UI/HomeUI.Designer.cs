@@ -34,12 +34,12 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::Payroll_Project_2.Properties.Resources.logo;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::Payroll_Project_2.Properties.Resources.logo1;
+            this.pictureBox4.Location = new System.Drawing.Point(301, 52);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1016, 764);
+            this.pictureBox4.Padding = new System.Windows.Forms.Padding(50);
+            this.pictureBox4.Size = new System.Drawing.Size(542, 530);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
@@ -48,9 +48,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.pictureBox4);
             this.Name = "HomeUI";
-            this.Size = new System.Drawing.Size(1016, 764);
+            this.Size = new System.Drawing.Size(1184, 650);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 

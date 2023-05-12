@@ -76,12 +76,12 @@ namespace Payroll_Project_2.UI
             this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.DetailPannel = new System.Windows.Forms.Panel();
+            this.ClearBtn = new System.Windows.Forms.Button();
             this.TablePannel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.RedArrow = new System.Windows.Forms.PictureBox();
             this.SearchBtn = new System.Windows.Forms.Button();
-            this.ClearBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.InvaliedSearchImage = new System.Windows.Forms.PictureBox();
             this.SalaryDetailTable.SuspendLayout();
@@ -90,7 +90,6 @@ namespace Payroll_Project_2.UI
             this.TablePannel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RedArrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InvaliedSearchImage)).BeginInit();
             this.SuspendLayout();
@@ -144,13 +143,13 @@ namespace Payroll_Project_2.UI
             this.SalaryDetailTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
             this.SalaryDetailTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.SalaryDetailTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.SalaryDetailTable.Size = new System.Drawing.Size(764, 260);
+            this.SalaryDetailTable.Size = new System.Drawing.Size(841, 260);
             this.SalaryDetailTable.TabIndex = 0;
             // 
             // Year5
             // 
             this.Year5.AutoSize = true;
-            this.Year5.Location = new System.Drawing.Point(120, 227);
+            this.Year5.Location = new System.Drawing.Point(132, 227);
             this.Year5.Name = "Year5";
             this.Year5.Size = new System.Drawing.Size(47, 19);
             this.Year5.TabIndex = 29;
@@ -169,7 +168,7 @@ namespace Payroll_Project_2.UI
             // 
             this.NoPayValue5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.NoPayValue5.AutoSize = true;
-            this.NoPayValue5.Location = new System.Drawing.Point(305, 227);
+            this.NoPayValue5.Location = new System.Drawing.Point(341, 227);
             this.NoPayValue5.Name = "NoPayValue5";
             this.NoPayValue5.Size = new System.Drawing.Size(47, 19);
             this.NoPayValue5.TabIndex = 27;
@@ -179,7 +178,7 @@ namespace Payroll_Project_2.UI
             // 
             this.GrossPayValue5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.GrossPayValue5.AutoSize = true;
-            this.GrossPayValue5.Location = new System.Drawing.Point(714, 227);
+            this.GrossPayValue5.Location = new System.Drawing.Point(791, 227);
             this.GrossPayValue5.Name = "GrossPayValue5";
             this.GrossPayValue5.Size = new System.Drawing.Size(47, 19);
             this.GrossPayValue5.TabIndex = 26;
@@ -189,7 +188,7 @@ namespace Payroll_Project_2.UI
             // 
             this.BasePayValue5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BasePayValue5.AutoSize = true;
-            this.BasePayValue5.Location = new System.Drawing.Point(496, 227);
+            this.BasePayValue5.Location = new System.Drawing.Point(551, 227);
             this.BasePayValue5.Name = "BasePayValue5";
             this.BasePayValue5.Size = new System.Drawing.Size(47, 19);
             this.BasePayValue5.TabIndex = 25;
@@ -198,7 +197,7 @@ namespace Payroll_Project_2.UI
             // Year4
             // 
             this.Year4.AutoSize = true;
-            this.Year4.Location = new System.Drawing.Point(120, 181);
+            this.Year4.Location = new System.Drawing.Point(132, 181);
             this.Year4.Name = "Year4";
             this.Year4.Size = new System.Drawing.Size(47, 19);
             this.Year4.TabIndex = 24;
@@ -217,7 +216,7 @@ namespace Payroll_Project_2.UI
             // 
             this.NoPayValue4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.NoPayValue4.AutoSize = true;
-            this.NoPayValue4.Location = new System.Drawing.Point(305, 181);
+            this.NoPayValue4.Location = new System.Drawing.Point(341, 181);
             this.NoPayValue4.Name = "NoPayValue4";
             this.NoPayValue4.Size = new System.Drawing.Size(47, 19);
             this.NoPayValue4.TabIndex = 22;
@@ -227,7 +226,7 @@ namespace Payroll_Project_2.UI
             // 
             this.GrossPayValue4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.GrossPayValue4.AutoSize = true;
-            this.GrossPayValue4.Location = new System.Drawing.Point(714, 181);
+            this.GrossPayValue4.Location = new System.Drawing.Point(791, 181);
             this.GrossPayValue4.Name = "GrossPayValue4";
             this.GrossPayValue4.Size = new System.Drawing.Size(47, 19);
             this.GrossPayValue4.TabIndex = 21;
@@ -237,7 +236,7 @@ namespace Payroll_Project_2.UI
             // 
             this.BasePayValue4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BasePayValue4.AutoSize = true;
-            this.BasePayValue4.Location = new System.Drawing.Point(496, 181);
+            this.BasePayValue4.Location = new System.Drawing.Point(551, 181);
             this.BasePayValue4.Name = "BasePayValue4";
             this.BasePayValue4.Size = new System.Drawing.Size(47, 19);
             this.BasePayValue4.TabIndex = 20;
@@ -255,7 +254,7 @@ namespace Payroll_Project_2.UI
             // Year3
             // 
             this.Year3.AutoSize = true;
-            this.Year3.Location = new System.Drawing.Point(120, 137);
+            this.Year3.Location = new System.Drawing.Point(132, 137);
             this.Year3.Name = "Year3";
             this.Year3.Size = new System.Drawing.Size(47, 19);
             this.Year3.TabIndex = 18;
@@ -265,7 +264,7 @@ namespace Payroll_Project_2.UI
             // 
             this.NoPayValue3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.NoPayValue3.AutoSize = true;
-            this.NoPayValue3.Location = new System.Drawing.Point(305, 137);
+            this.NoPayValue3.Location = new System.Drawing.Point(341, 137);
             this.NoPayValue3.Name = "NoPayValue3";
             this.NoPayValue3.Size = new System.Drawing.Size(47, 19);
             this.NoPayValue3.TabIndex = 17;
@@ -275,7 +274,7 @@ namespace Payroll_Project_2.UI
             // 
             this.BasePayValue3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BasePayValue3.AutoSize = true;
-            this.BasePayValue3.Location = new System.Drawing.Point(496, 137);
+            this.BasePayValue3.Location = new System.Drawing.Point(551, 137);
             this.BasePayValue3.Name = "BasePayValue3";
             this.BasePayValue3.Size = new System.Drawing.Size(47, 19);
             this.BasePayValue3.TabIndex = 16;
@@ -285,7 +284,7 @@ namespace Payroll_Project_2.UI
             // 
             this.GrossPayValue3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.GrossPayValue3.AutoSize = true;
-            this.GrossPayValue3.Location = new System.Drawing.Point(714, 137);
+            this.GrossPayValue3.Location = new System.Drawing.Point(791, 137);
             this.GrossPayValue3.Name = "GrossPayValue3";
             this.GrossPayValue3.Size = new System.Drawing.Size(47, 19);
             this.GrossPayValue3.TabIndex = 15;
@@ -303,7 +302,7 @@ namespace Payroll_Project_2.UI
             // Year2
             // 
             this.Year2.AutoSize = true;
-            this.Year2.Location = new System.Drawing.Point(120, 94);
+            this.Year2.Location = new System.Drawing.Point(132, 94);
             this.Year2.Name = "Year2";
             this.Year2.Size = new System.Drawing.Size(47, 19);
             this.Year2.TabIndex = 13;
@@ -313,7 +312,7 @@ namespace Payroll_Project_2.UI
             // 
             this.NoPayValue2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.NoPayValue2.AutoSize = true;
-            this.NoPayValue2.Location = new System.Drawing.Point(305, 94);
+            this.NoPayValue2.Location = new System.Drawing.Point(341, 94);
             this.NoPayValue2.Name = "NoPayValue2";
             this.NoPayValue2.Size = new System.Drawing.Size(47, 19);
             this.NoPayValue2.TabIndex = 12;
@@ -323,7 +322,7 @@ namespace Payroll_Project_2.UI
             // 
             this.BasePayValue2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BasePayValue2.AutoSize = true;
-            this.BasePayValue2.Location = new System.Drawing.Point(496, 94);
+            this.BasePayValue2.Location = new System.Drawing.Point(551, 94);
             this.BasePayValue2.Name = "BasePayValue2";
             this.BasePayValue2.Size = new System.Drawing.Size(47, 19);
             this.BasePayValue2.TabIndex = 11;
@@ -333,7 +332,7 @@ namespace Payroll_Project_2.UI
             // 
             this.GrossPayValue2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.GrossPayValue2.AutoSize = true;
-            this.GrossPayValue2.Location = new System.Drawing.Point(714, 94);
+            this.GrossPayValue2.Location = new System.Drawing.Point(791, 94);
             this.GrossPayValue2.Name = "GrossPayValue2";
             this.GrossPayValue2.Size = new System.Drawing.Size(47, 19);
             this.GrossPayValue2.TabIndex = 10;
@@ -343,7 +342,7 @@ namespace Payroll_Project_2.UI
             // 
             this.GrossPayValue1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.GrossPayValue1.AutoSize = true;
-            this.GrossPayValue1.Location = new System.Drawing.Point(714, 48);
+            this.GrossPayValue1.Location = new System.Drawing.Point(791, 48);
             this.GrossPayValue1.Name = "GrossPayValue1";
             this.GrossPayValue1.Size = new System.Drawing.Size(47, 19);
             this.GrossPayValue1.TabIndex = 9;
@@ -353,7 +352,7 @@ namespace Payroll_Project_2.UI
             // 
             this.BasePayValue1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BasePayValue1.AutoSize = true;
-            this.BasePayValue1.Location = new System.Drawing.Point(496, 48);
+            this.BasePayValue1.Location = new System.Drawing.Point(551, 48);
             this.BasePayValue1.Name = "BasePayValue1";
             this.BasePayValue1.Size = new System.Drawing.Size(47, 19);
             this.BasePayValue1.TabIndex = 8;
@@ -363,7 +362,7 @@ namespace Payroll_Project_2.UI
             // 
             this.NoPayValue1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.NoPayValue1.AutoSize = true;
-            this.NoPayValue1.Location = new System.Drawing.Point(305, 48);
+            this.NoPayValue1.Location = new System.Drawing.Point(341, 48);
             this.NoPayValue1.Name = "NoPayValue1";
             this.NoPayValue1.Size = new System.Drawing.Size(47, 19);
             this.NoPayValue1.TabIndex = 7;
@@ -372,7 +371,7 @@ namespace Payroll_Project_2.UI
             // Year1
             // 
             this.Year1.AutoSize = true;
-            this.Year1.Location = new System.Drawing.Point(120, 48);
+            this.Year1.Location = new System.Drawing.Point(132, 48);
             this.Year1.Name = "Year1";
             this.Year1.Size = new System.Drawing.Size(47, 19);
             this.Year1.TabIndex = 6;
@@ -383,7 +382,7 @@ namespace Payroll_Project_2.UI
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(641, 0);
+            this.label5.Location = new System.Drawing.Point(718, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 20);
             this.label5.TabIndex = 4;
@@ -394,7 +393,7 @@ namespace Payroll_Project_2.UI
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(430, 0);
+            this.label4.Location = new System.Drawing.Point(485, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 20);
             this.label4.TabIndex = 3;
@@ -405,7 +404,7 @@ namespace Payroll_Project_2.UI
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(251, 0);
+            this.label3.Location = new System.Drawing.Point(287, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 20);
             this.label3.TabIndex = 2;
@@ -415,7 +414,7 @@ namespace Payroll_Project_2.UI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(120, 0);
+            this.label2.Location = new System.Drawing.Point(132, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 20);
             this.label2.TabIndex = 1;
@@ -443,13 +442,14 @@ namespace Payroll_Project_2.UI
             // OverallSalaryReportLabel
             // 
             this.OverallSalaryReportLabel.AutoSize = true;
-            this.OverallSalaryReportLabel.BackColor = System.Drawing.Color.White;
+            this.OverallSalaryReportLabel.BackColor = System.Drawing.Color.Transparent;
             this.OverallSalaryReportLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.OverallSalaryReportLabel.Location = new System.Drawing.Point(30, 26);
+            this.OverallSalaryReportLabel.ForeColor = System.Drawing.Color.White;
+            this.OverallSalaryReportLabel.Location = new System.Drawing.Point(30, 16);
             this.OverallSalaryReportLabel.Name = "OverallSalaryReportLabel";
-            this.OverallSalaryReportLabel.Size = new System.Drawing.Size(333, 45);
+            this.OverallSalaryReportLabel.Size = new System.Drawing.Size(247, 45);
             this.OverallSalaryReportLabel.TabIndex = 1;
-            this.OverallSalaryReportLabel.Text = "Recent Salary Report";
+            this.OverallSalaryReportLabel.Text = "Recent Payrolls";
             // 
             // tableLayoutPanel2
             // 
@@ -490,11 +490,14 @@ namespace Payroll_Project_2.UI
             // 
             // EmployeeIdComboBox
             // 
+            this.EmployeeIdComboBox.BackColor = System.Drawing.Color.DimGray;
+            this.EmployeeIdComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EmployeeIdComboBox.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.EmployeeIdComboBox.ForeColor = System.Drawing.Color.White;
             this.EmployeeIdComboBox.FormattingEnabled = true;
             this.EmployeeIdComboBox.Location = new System.Drawing.Point(198, 15);
             this.EmployeeIdComboBox.Name = "EmployeeIdComboBox";
-            this.EmployeeIdComboBox.Size = new System.Drawing.Size(120, 28);
+            this.EmployeeIdComboBox.Size = new System.Drawing.Size(164, 28);
             this.EmployeeIdComboBox.TabIndex = 51;
             // 
             // EmployeeIDLabel
@@ -512,7 +515,7 @@ namespace Payroll_Project_2.UI
             this.AllowanceValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AllowanceValueLabel.AutoSize = true;
             this.AllowanceValueLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.AllowanceValueLabel.Location = new System.Drawing.Point(312, 127);
+            this.AllowanceValueLabel.Location = new System.Drawing.Point(448, 127);
             this.AllowanceValueLabel.Name = "AllowanceValueLabel";
             this.AllowanceValueLabel.Size = new System.Drawing.Size(17, 20);
             this.AllowanceValueLabel.TabIndex = 54;
@@ -523,7 +526,7 @@ namespace Payroll_Project_2.UI
             this.MonthlySalaryValueLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.MonthlySalaryValueLabel.AutoSize = true;
             this.MonthlySalaryValueLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.MonthlySalaryValueLabel.Location = new System.Drawing.Point(312, 73);
+            this.MonthlySalaryValueLabel.Location = new System.Drawing.Point(448, 73);
             this.MonthlySalaryValueLabel.Name = "MonthlySalaryValueLabel";
             this.MonthlySalaryValueLabel.Size = new System.Drawing.Size(17, 20);
             this.MonthlySalaryValueLabel.TabIndex = 57;
@@ -545,7 +548,7 @@ namespace Payroll_Project_2.UI
             this.EmployeeNameValueLabel.AutoSize = true;
             this.EmployeeNameValueLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.EmployeeNameValueLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.EmployeeNameValueLabel.Location = new System.Drawing.Point(312, 22);
+            this.EmployeeNameValueLabel.Location = new System.Drawing.Point(448, 22);
             this.EmployeeNameValueLabel.Name = "EmployeeNameValueLabel";
             this.EmployeeNameValueLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployeeNameValueLabel.Size = new System.Drawing.Size(17, 20);
@@ -576,6 +579,7 @@ namespace Payroll_Project_2.UI
             // DetailPannel
             // 
             this.DetailPannel.BackColor = System.Drawing.Color.Transparent;
+            this.DetailPannel.Controls.Add(this.ClearBtn);
             this.DetailPannel.Controls.Add(this.TablePannel);
             this.DetailPannel.Controls.Add(this.AllowanceValueLabel);
             this.DetailPannel.Controls.Add(this.MonthlySalaryValueLabel);
@@ -583,51 +587,76 @@ namespace Payroll_Project_2.UI
             this.DetailPannel.Controls.Add(this.EmployeeNameValueLabel);
             this.DetailPannel.Controls.Add(this.label20);
             this.DetailPannel.Controls.Add(this.label18);
+            this.DetailPannel.ForeColor = System.Drawing.Color.White;
             this.DetailPannel.Location = new System.Drawing.Point(30, 153);
             this.DetailPannel.Name = "DetailPannel";
-            this.DetailPannel.Size = new System.Drawing.Size(843, 529);
+            this.DetailPannel.Size = new System.Drawing.Size(979, 497);
             this.DetailPannel.TabIndex = 58;
             this.DetailPannel.Visible = false;
+            // 
+            // ClearBtn
+            // 
+            this.ClearBtn.BackColor = System.Drawing.Color.Gold;
+            this.ClearBtn.FlatAppearance.BorderSize = 0;
+            this.ClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ClearBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.ClearBtn.ForeColor = System.Drawing.Color.Black;
+            this.ClearBtn.Image = ((System.Drawing.Image)(resources.GetObject("ClearBtn.Image")));
+            this.ClearBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ClearBtn.Location = new System.Drawing.Point(12, 450);
+            this.ClearBtn.Name = "ClearBtn";
+            this.ClearBtn.Padding = new System.Windows.Forms.Padding(9, 0, 9, 0);
+            this.ClearBtn.Size = new System.Drawing.Size(116, 36);
+            this.ClearBtn.TabIndex = 49;
+            this.ClearBtn.Text = "Clear";
+            this.ClearBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ClearBtn.UseVisualStyleBackColor = false;
+            this.ClearBtn.Visible = false;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
             // TablePannel
             // 
             this.TablePannel.Controls.Add(this.SalaryDetailTable);
             this.TablePannel.Controls.Add(this.pictureBox2);
+            this.TablePannel.Controls.Add(this.label8);
+            this.TablePannel.ForeColor = System.Drawing.Color.White;
             this.TablePannel.Location = new System.Drawing.Point(3, 164);
             this.TablePannel.Name = "TablePannel";
-            this.TablePannel.Size = new System.Drawing.Size(818, 273);
+            this.TablePannel.Size = new System.Drawing.Size(962, 273);
             this.TablePannel.TabIndex = 58;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.ErrorImage = global::Payroll_Project_2.Properties.Resources.empty_box;
-            this.pictureBox2.Image = global::Payroll_Project_2.Properties.Resources.empty_box;
-            this.pictureBox2.Location = new System.Drawing.Point(263, 38);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(209, 30);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(266, 221);
+            this.pictureBox2.Size = new System.Drawing.Size(184, 156);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 61;
             this.pictureBox2.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(225, 200);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(153, 37);
+            this.label8.TabIndex = 61;
+            this.label8.Text = "No Results";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.EmployeeIDLabel);
             this.panel2.Controls.Add(this.SearchBtn);
             this.panel2.Controls.Add(this.EmployeeIdComboBox);
+            this.panel2.ForeColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(30, 77);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(420, 59);
+            this.panel2.Size = new System.Drawing.Size(565, 59);
             this.panel2.TabIndex = 60;
-            // 
-            // RedArrow
-            // 
-            this.RedArrow.Image = global::Payroll_Project_2.Properties.Resources.sammy_arrow;
-            this.RedArrow.Location = new System.Drawing.Point(268, 142);
-            this.RedArrow.Name = "RedArrow";
-            this.RedArrow.Size = new System.Drawing.Size(120, 258);
-            this.RedArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.RedArrow.TabIndex = 61;
-            this.RedArrow.TabStop = false;
             // 
             // SearchBtn
             // 
@@ -635,43 +664,25 @@ namespace Payroll_Project_2.UI
             this.SearchBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.SearchBtn.FlatAppearance.BorderSize = 0;
             this.SearchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SearchBtn.Location = new System.Drawing.Point(344, 17);
+            this.SearchBtn.Location = new System.Drawing.Point(403, 15);
             this.SearchBtn.Name = "SearchBtn";
             this.SearchBtn.Size = new System.Drawing.Size(25, 25);
             this.SearchBtn.TabIndex = 2;
             this.SearchBtn.UseVisualStyleBackColor = true;
             this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 
-            // ClearBtn
-            // 
-            this.ClearBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.ClearBtn.Image = global::Payroll_Project_2.Properties.Resources.eraser;
-            this.ClearBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ClearBtn.Location = new System.Drawing.Point(686, 602);
-            this.ClearBtn.Name = "ClearBtn";
-            this.ClearBtn.Padding = new System.Windows.Forms.Padding(9, 0, 9, 0);
-            this.ClearBtn.Size = new System.Drawing.Size(116, 36);
-            this.ClearBtn.TabIndex = 49;
-            this.ClearBtn.Text = "Clear";
-            this.ClearBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ClearBtn.UseVisualStyleBackColor = true;
-            this.ClearBtn.Visible = false;
-            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.ErrorImage = global::Payroll_Project_2.Properties.Resources.logo;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(728, 592);
+            this.pictureBox1.Image = global::Payroll_Project_2.Properties.Resources.logo1;
+            this.pictureBox1.Location = new System.Drawing.Point(1015, 517);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 166);
+            this.pictureBox1.Size = new System.Drawing.Size(161, 127);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 59;
             this.pictureBox1.TabStop = false;
             // 
             // InvaliedSearchImage
             // 
-            this.InvaliedSearchImage.Image = global::Payroll_Project_2.Properties.Resources.sammy_searching;
             this.InvaliedSearchImage.Location = new System.Drawing.Point(248, 207);
             this.InvaliedSearchImage.Name = "InvaliedSearchImage";
             this.InvaliedSearchImage.Size = new System.Drawing.Size(366, 290);
@@ -684,18 +695,16 @@ namespace Payroll_Project_2.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Controls.Add(this.ClearBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.DetailPannel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.OverallSalaryReportLabel);
             this.Controls.Add(this.InvaliedSearchImage);
-            this.Controls.Add(this.RedArrow);
             this.DoubleBuffered = true;
             this.Name = "SalarySummeryUI";
-            this.Size = new System.Drawing.Size(946, 761);
+            this.Size = new System.Drawing.Size(1184, 650);
             this.Load += new System.EventHandler(this.SalarySummeryUI_Load);
             this.SalaryDetailTable.ResumeLayout(false);
             this.SalaryDetailTable.PerformLayout();
@@ -704,10 +713,10 @@ namespace Payroll_Project_2.UI
             this.DetailPannel.ResumeLayout(false);
             this.DetailPannel.PerformLayout();
             this.TablePannel.ResumeLayout(false);
+            this.TablePannel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RedArrow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InvaliedSearchImage)).EndInit();
             this.ResumeLayout(false);
@@ -768,6 +777,6 @@ namespace Payroll_Project_2.UI
         private Panel TablePannel;
         private PictureBox pictureBox2;
         private PictureBox InvaliedSearchImage;
-        private PictureBox RedArrow;
+        private Label label8;
     }
 }

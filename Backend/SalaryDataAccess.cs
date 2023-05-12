@@ -9,7 +9,7 @@ namespace Payroll_Project_2.Backend
     {
         private readonly string connectionString = DbSettings.ConnectionString;
 
-        public void AddSalary(Salary salary)
+        public void CreateSalary(Salary salary)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace Payroll_Project_2.Backend
             }
         }
 
-        public List<Salary> GetSalaryList(int id)
+        public List<Salary> GetEmployeeSalaryList(int id)
         {
             List<Salary> salaryList = new List<Salary>();
 
@@ -87,7 +87,7 @@ namespace Payroll_Project_2.Backend
             }
         }
 
-        public List<decimal> GetTotalPayValues(DateTime fromMonth, DateTime toMonth)
+        public List<decimal> GetOverallPayValues(DateTime fromMonth, DateTime toMonth)
         {
             decimal totalNoPay = 0;
             decimal totalBasePay = 0;

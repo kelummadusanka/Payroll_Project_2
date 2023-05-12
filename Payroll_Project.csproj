@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60C077EB-6D89-451D-84DE-D9B1270D0F56}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Payroll_Project_2</RootNamespace>
+    <AssemblyName>Payroll_Project_2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Backend\DbSettings.cs" />
+    <Compile Include="Backend\Employee.cs" />
+    <Compile Include="Backend\EmployeeDataAccess.cs" />
+    <Compile Include="Backend\Salary.cs" />
+    <Compile Include="Backend\SalaryDataAccess.cs" />
+    <Compile Include="Backend\Setting.cs" />
+    <Compile Include="Backend\SettingDataAccess.cs" />
+    <Compile Include="Grifindo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grifindo.Designer.cs">
+      <DependentUpon>Grifindo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EmployeeUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\EmployeeUI.Designer.cs">
+      <DependentUpon>EmployeeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HomeUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\HomeUI.Designer.cs">
+      <DependentUpon>HomeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SalaryCalculateUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SalaryCalculateUI.Designer.cs">
+      <DependentUpon>SalaryCalculateUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SalarySummeryUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SalarySummeryUI.Designer.cs">
+      <DependentUpon>SalarySummeryUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SettingsUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SettingsUI.Designer.cs">
+      <DependentUpon>SettingsUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SummeryPayvaluesUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SummeryPayvaluesUI.Designer.cs">
+      <DependentUpon>SummeryPayvaluesUI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Grifindo.resx">
+      <DependentUpon>Grifindo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EmployeeUI.resx">
+      <DependentUpon>EmployeeUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\HomeUI.resx">
+      <DependentUpon>HomeUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SalaryCalculateUI.resx">
+      <DependentUpon>SalaryCalculateUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SalarySummeryUI.resx">
+      <DependentUpon>SalarySummeryUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SettingsUI.resx">
+      <DependentUpon>SettingsUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SummeryPayvaluesUI.resx">
+      <DependentUpon>SummeryPayvaluesUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Database\Database.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\Database_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\growth.png" />
+    <None Include="Resources\LogOut .png" />
+    <None Include="Resources\no-credit-card.png" />
+    <None Include="Resources\ebit.png" />
+    <None Include="Resources\earning.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\refresh %281%29.png" />
+    <None Include="Resources\Hexagaon.png" />
+    <None Include="Resources\Color logo - no background.png" />
+    <None Include="Resources\sammy-arrow.gif" />
+    <None Include="Resources\sammy-searching.gif" />
+    <None Include="Images\no-credit-card.png" />
+    <None Include="Images\empty-box.png" />
+    <None Include="Images\ebit.png" />
+    <None Include="Images\earning.png" />
+    <None Include="Images\create .png" />
+    <None Include="Images\update.png" />
+    <None Include="Images\six_month_salary.png" />
+    <None Include="Images\settings.png" />
+    <None Include="Images\search.png" />
+    <None Include="Images\salary.png" />
+    <None Include="Images\report.png" />
+    <None Include="Images\refresh.png" />
+    <None Include="Images\money.png" />
+    <None Include="Images\LogOut .png" />
+    <None Include="Images\logo.png" />
+    <None Include="Images\home.png" />
+    <None Include="Images\growth.png" />
+    <None Include="Images\eraser.png" />
+    <None Include="Images\employee.png" />
+    <None Include="Images\delete_Red.png" />
+    <None Include="Images\delete.png" />
+    <None Include="Images\close.png" />
+    <None Include="Images\clear.png" />
+    <None Include="Images\cash-payment.png" />
+    <None Include="Images\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

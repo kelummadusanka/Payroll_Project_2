@@ -21,7 +21,7 @@ namespace Payroll_Project_2.UI
                 int No_of_Leaves = int.Parse(LeavesTxtBox.Text);
                 decimal Tax_Rate = decimal.Parse(GovTaxRateTxtBox.Text);
 
-                new SettingDataAccess().SetValues(Date_Range, Begin_Date, End_Date, No_of_Leaves, Tax_Rate);
+                new SettingDataAccess().SetSettingValues(Date_Range, Begin_Date, End_Date, No_of_Leaves, Tax_Rate);
             }
             catch
             {
@@ -31,7 +31,7 @@ namespace Payroll_Project_2.UI
 
         private void SettingsUI_Load(object sender, System.EventArgs e)
         {
-            Setting setting = new SettingDataAccess().GetValue();
+            Setting setting = new SettingDataAccess().GetSettingValue();
             DateRangeTxtBox.Text = setting.Date_Range.ToString();
             SalaryBeginDateTxtBox.Text = setting.Begin_Date.ToString();
             SalaryEndDateTxtBox.Text = setting.End_Date.ToString();

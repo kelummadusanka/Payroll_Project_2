@@ -1,5 +1,6 @@
 ﻿using Payroll_Project_2.UI;
 using System;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace Payroll_Project_2
@@ -15,9 +16,7 @@ namespace Payroll_Project_2
 
         private void ChangeBtnBar(Button button)
         {
-            Buttonbar.Top = button.Top + button.Height * 20 / 100;
-            Buttonbar.Height = button.Height * 60 / 100;
-
+            Buttonbar.Left = button.Left ;
         }
         private void ChangeSubsalaryBar(Button button)
         {
@@ -43,8 +42,6 @@ namespace Payroll_Project_2
             ContentPannel.Controls.Clear();
             HomeUI homeUI = new HomeUI();
             ContentPannel.Controls.Add(homeUI);
-
-
         }
 
         private void EmployeeBtn_Click(object sender, EventArgs e)
@@ -61,10 +58,6 @@ namespace Payroll_Project_2
         {
             ShowDropDownMenu();
             ChangeBtnBar(SalaryBtn);
-            ContentPannel.Controls.Clear();
-            SalaryCalculateUI salaryCalculate = new SalaryCalculateUI();
-            ContentPannel.Controls.Add(salaryCalculate);
-            salaryCalculate.Show();
         }
 
         private void SettingBtn_Click(object sender, EventArgs e)
@@ -79,6 +72,7 @@ namespace Payroll_Project_2
 
         private void SalaryCulateBtn_Click(object sender, EventArgs e)
         {
+            HideDropDownMenu();
             ChangeSubsalaryBar(SalaryCulateBtn);
             ContentPannel.Controls.Clear();
             SalaryCalculateUI salaryCalculate = new SalaryCalculateUI();
@@ -89,6 +83,7 @@ namespace Payroll_Project_2
 
         private void SalarySummeryBtn_Click(object sender, EventArgs e)
         {
+            HideDropDownMenu();
             ChangeSubsalaryBar(SalarySummeryBtn);
             SalarySummeryUI salarySummery = new SalarySummeryUI();
             ContentPannel.Controls.Clear();
@@ -103,6 +98,7 @@ namespace Payroll_Project_2
             SummeryPayvaluesUI summeryPayvalues = new SummeryPayvaluesUI();
             ContentPannel.Controls.Add(summeryPayvalues);
             summeryPayvalues.Show();
+            HideDropDownMenu();
         }
 
         private void Grifindo_Load(object sender, EventArgs e)
@@ -117,9 +113,79 @@ namespace Payroll_Project_2
             Application.Exit();
         }
 
-        private void LogOutBtn_Click_1(object sender, EventArgs e)
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ShowDropDownMenu();
+            ChangeBtnBar(SalaryBtn);
+        }
+
+        private void LogOutBtn1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        //drag Form
+
+        [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int Wmsg, int wParam, int lParam);
+
+        private void Grifindo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle,0x112,0xf012,0);
+        }
+
+        private void ContentPannel_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+
+        private void buttonHome_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void SalaryBtn_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void EmployeeBtn_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void SettingBtn_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void LogOutBtn1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

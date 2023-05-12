@@ -21,7 +21,7 @@ namespace Payroll_Project_2.UI
 
         private void SalaryCalculateBtn_Click(object sender, EventArgs e)
         {
-            int validsalaryCycleDateRange = new SettingDataAccess().GetValue().Date_Range;
+            int validsalaryCycleDateRange = new SettingDataAccess().GetSettingValue().Date_Range;
             int Id = int.Parse(EmployeeIdComboBox.Text);
             int salary_Cycle_Date_Range = int.Parse(SalaryCycleTxtBox.Text);
             decimal no_of_Over_time_Hours = Decimal.Parse(OTTxtBox.Text);
@@ -40,9 +40,6 @@ namespace Payroll_Project_2.UI
             salary = new Salary(Id, Salary_Paid_Date, no_of_Over_time_Hours, no_of_Absent_Days, no_of_Holidays);
 
             EmployeeNameValueLabel.Text = salary.Name.ToString().TrimEnd().ToUpperInvariant();
-            MonthlySalaryValueLabel.Text = salary.Monthly_Salary.ToString();
-            AllowanceValueLabel.Text = salary.Allowance.ToString();
-            TaxRateValueLabel.Text = salary.government_Tax_Rate.ToString();
             NoPayValueLabel.Text = salary.No_Pay_Value.ToString();
             BasePayValueLabel.Text = salary.Base_Pay_Value.ToString();
             GrossPayValueLabel.Text = salary.Gross_Pay_Value.ToString();
@@ -52,7 +49,7 @@ namespace Payroll_Project_2.UI
 
         private void FromDatePicker_ValueChanged(object sender, EventArgs e)
         {
-            int validBeginDate = new SettingDataAccess().GetValue().Begin_Date;
+            int validBeginDate = new SettingDataAccess().GetSettingValue().Begin_Date;
 
             if (int.Parse(BeginDatePicker.Value.ToString("dd")) != validBeginDate)
             {
@@ -65,7 +62,7 @@ namespace Payroll_Project_2.UI
 
         private void ToDatePicker_ValueChanged(object sender, EventArgs e)
         {
-            int validEndDate = new SettingDataAccess().GetValue().End_Date;
+            int validEndDate = new SettingDataAccess().GetSettingValue().End_Date;
 
             if (int.Parse(EndDatePicker.Value.ToString("dd")) != validEndDate)
             {
@@ -79,7 +76,7 @@ namespace Payroll_Project_2.UI
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            new SalaryDataAccess().AddSalary(salary);
+            new SalaryDataAccess().CreateSalary(salary);
         }
 
         private void Closebtn_Click(object sender, EventArgs e)
@@ -87,5 +84,9 @@ namespace Payroll_Project_2.UI
             PaySheetPanel.Visible = false;
         }
 
+        private void PaySheetPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

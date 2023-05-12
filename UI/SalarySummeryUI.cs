@@ -19,7 +19,7 @@ namespace Payroll_Project_2.UI
 
         private void SearchBtn_Click(object sender, System.EventArgs e)
         {
-            RedArrow.Visible = false;
+          
             ClearBtn.Visible = true;
             try
             {
@@ -27,7 +27,7 @@ namespace Payroll_Project_2.UI
                 DetailPannel.Visible = true;
                 int id = int.Parse(EmployeeIdComboBox.Text);
 
-                List<Salary> salaryList = new SalaryDataAccess().GetSalaryList(id);
+                List<Salary> salaryList = new SalaryDataAccess().GetEmployeeSalaryList(id);
                 Employee employee = new EmployeeDataAccess().GetEmployee(id);
 
                 EmployeeNameValueLabel.Text = employee.Name.Trim();
